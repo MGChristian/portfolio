@@ -3,3 +3,35 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* ANIMATIONS */
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-10rem);
+    filter: opacity(0);
+  }
+  to {
+    transform: translateY(0);
+    filter: opacity(1);
+  }
+}
+
+.animate-slide-in {
+  animation: slideInFromTop 0.8s ease-out forwards;
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(10rem);
+    filter: opacity(0);
+  }
+  to {
+    transform: translateY(0);
+    filter: opacity(1);
+  }
+}
+
+.animate-slide-in-bottom {
+  animation: slideInFromBottom 0.8s ease-out forwards;
+}
