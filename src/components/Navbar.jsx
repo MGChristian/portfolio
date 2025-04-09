@@ -6,18 +6,22 @@ import { RxCross2 } from "react-icons/rx";
 
 const navValues = [
   {
+    key: "nav1",
     name: "HOME",
     src: "/",
   },
   {
+    key: "nav2",
     name: "ABOUT US",
     src: "/about",
   },
   {
+    key: "nav3",
     name: "TEAM",
     src: "/team",
   },
   {
+    key: "nav4",
     name: "PROJECTS",
     src: "/projects",
   },
@@ -54,7 +58,7 @@ export default function Navbar() {
                 className={`group relative flex h-full items-center justify-center overflow-hidden rounded-full px-4 transition-transform duration-700 ease-in-out hover:scale-90 ${currentPage == item.src ? "scale-105 bg-neutral-800" : "scale-100"}`}
               >
                 <Link
-                  key={index}
+                  key={item.key}
                   className="z-10 w-fit text-center font-semibold text-white"
                   to={item.src}
                 >
