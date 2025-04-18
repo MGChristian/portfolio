@@ -1,7 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 @import "tailwindcss";
+
 
 html {
   scroll-behavior: smooth;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('./fonts/Satoshi-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
+.satoshireg {
+  font-family: 'Satoshi-Regular', sans-serif;
+}
+
+.unbounded {
+  font-family: 'Unbounded', sans-serif;
 }
 
 /* ANIMATIONS */
@@ -35,3 +55,4 @@ html {
 .animate-slide-in-bottom {
   animation: slideInFromBottom 0.8s ease-out forwards;
 }
+

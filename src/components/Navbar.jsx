@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
-import { MdArrowOutward, MdArrowForward } from "react-icons/md";
 import { useEffect, useState } from "react";
 import { FaGripLines } from "react-icons/fa";
+import { MdArrowForward, MdArrowOutward } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 const navValues = [
   {
@@ -59,7 +59,7 @@ export default function Navbar() {
               >
                 <Link
                   key={item.key}
-                  className="z-10 w-fit text-center font-semibold text-white"
+                  className="z-10 w-fit text-center font-normal text-white unbounded"
                   to={item.src}
                 >
                   <p className={`${currentPage == item.src && "text-sky-400"}`}>
@@ -75,11 +75,11 @@ export default function Navbar() {
         </div>
         <div className="flex w-40 items-center justify-center">
           <Link
-            className="flex h-fit items-center gap-2 rounded-full bg-sky-400 px-4 py-2"
+            className="flex h-fit items-center gap-2 rounded-full bg-sky-400 px-4 py-4"
             onMouseEnter={handleContactHover}
             onMouseLeave={handleContactHover}
           >
-            <p className="font-semibold">CONTACT US</p>
+            <p className="font-normal text-[13px] unbounded">CONTACT US</p>
             {contactHover === true ? (
               <MdArrowForward size={13} />
             ) : (
@@ -114,7 +114,7 @@ export default function Navbar() {
           return (
             <Link
               key={index}
-              className={`w-full rounded-full bg-neutral-600 p-4 text-center text-white`}
+              className={`text-md w-full rounded-full bg-neutral-600 p-4 text-center text-white unbounded mb-[10px]`}
               to={item.src}
               onClick={() => setNav(false)}
             >
@@ -123,7 +123,7 @@ export default function Navbar() {
           );
         })}
         <Link
-          className={`my-4 w-full rounded-full border border-neutral-700 p-4 text-center text-white transition-colors duration-300 ease-in-out hover:bg-orange-400 hover:text-black`}
+          className={`unbounded my-4 w-full rounded-full border border-neutral-700 p-4 text-center text-white transition-colors duration-300 ease-in-out hover:bg-orange-400 hover:text-black`}
           to="/contact"
           onClick={() => setNav(false)}
         >
