@@ -16,7 +16,7 @@ export default function Footer() {
                     </div>
                     <div className="bg-stone-800 rounded-3xl p-4 flex flex-col items-start lg:w-[800px]">
                         <MapPin className="mb-2 text-sky-400 ml-3 min-w-[24px]" size={24} />
-                        <a href='#' className="text-md md:text-base break-words satoshireg ml-3 hover:text-orange-400 hover:underline">123 Main Street Vermosa CAV, Philippines</a>
+                        <a href='#' className="text-md md:text-base break-words satoshireg ml-3 hover:text-orange-400 hover:underline">CvSU-Imus, Palico IV, Imus City, CAV, Philippines</a>
                     </div>
                 </div>
             </div>
