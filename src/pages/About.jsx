@@ -37,27 +37,27 @@ export default function About() {
     <>
       <Navbar />
       <div className="p-4 lg:p-0">
-        <section className="mb-16 flex flex-col gap-12 lg:mb-0 lg:h-[calc(100vh-80px)] lg:max-h-[900px]">
+        <section className="mb-16 flex flex-col gap-12 lg:mb-0 lg:h-[calc(100vh-80px)]">
           <div className="fixed -z-1 h-72 w-full bg-gradient-to-b from-neutral-950 from-10% via-neutral-900 via-50% to-neutral-950 to-90%"></div>
-          <div className="flex-column flex h-64 items-center justify-center">
-            <h1 className="animate-slide-in unbounded text-4xl font-normal text-white text-shadow-black text-shadow-lg md:text-5xl lg:text-6xl">
+          <div className="flex h-64 items-center justify-center flex-column">
+            <h1 className="animate-slide-in text-4xl font-normal text-white text-shadow-black text-shadow-lg md:text-5xl lg:text-6xl unbounded">
               About Synergy
             </h1>
           </div>
           <div className="animate-slide-in-bottom flex min-h-fit max-w-full flex-wrap items-center justify-center gap-2 lg:h-96 lg:flex-nowrap lg:px-8">
-            <div className="flex h-full max-w-[710px] flex-col gap-12 rounded-3xl border border-stone-700 bg-stone-900 p-6 shadow-2xl lg:w-1/2">
+            <div className="flex h-full max-w-[710px] lg:w-1/2 flex-col gap-12 rounded-3xl bg-stone-900 p-6 shadow-2xl border border-stone-700">
               <div className="flex flex-col gap-4">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-neutral-700 border border-neutral-500">
                   <TbCircleLetterG
                     size={50}
                     className="text-sky-400 drop-shadow-[0_0_8px_rgba(96,165,250,1)]"
                   />
                 </div>
-                <h4 className="unbounded text-xl font-normal text-white md:text-2xl">
+                <h4 className="text-xl font-normal text-white md:text-2xl unbounded">
                   Creating High Quality Digital Solutions
                 </h4>
               </div>
-              <p className="text-md satoshireg font-normal text-white">
+              <p className="text-md font-normal text-white satoshireg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Temporibus, ullam blanditiis? Laboriosam quas officiis excepturi
                 molestiae et architecto dolore possimus doloribus officia? Magni
@@ -68,19 +68,19 @@ export default function About() {
                 excepturi. Expedita labore beatae blanditiis unde optio!
               </p>
             </div>
-            <div className="flex h-full max-w-[710px] flex-col gap-12 rounded-3xl border border-stone-700 bg-stone-900 p-6 pb-12 shadow-2xl lg:w-1/2">
+            <div className="flex h-full max-w-[710px] lg:w-1/2 flex-col gap-12 rounded-3xl bg-stone-900 p-6 pb-12 shadow-2xl border border-stone-700">
               <div className="flex flex-col gap-4">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-neutral-700 border border-neutral-500">
                   <LuSquareMenu
                     size={50}
                     className="text-sky-400 drop-shadow-[0_0_8px_rgba(96,165,250,1)]"
                   />
                 </div>
-                <h4 className="unbounded text-xl font-normal text-white md:text-2xl">
+                <h4 className="text-xl font-normal text-white md:text-2xl unbounded">
                   Our Commitment
                 </h4>
               </div>
-              <p className="text-md satoshireg font-normal text-white">
+              <p className="text-md font-normal text-white satoshireg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Temporibus, ullam blanditiis? Laboriosam quas officiis excepturi
                 molestiae et architecto dolore possimus doloribus officia? Magni
@@ -94,14 +94,14 @@ export default function About() {
           </div>
         </section>
 
-        <section className="mx-auto mt-26 mb-48 max-w-[1300px]">
+        <section className="mx-auto mb-48 mt-26 max-w-[1300px]">
           <div className="animate-slide-in-bottom mb-16 flex items-center gap-4">
-            <hr className="h-6 w-36 rounded-2xl border-12 text-sky-400" />
-            <h3 className="unbounded text-2xl font-normal text-white md:text-3xl lg:text-4xl">
+            <hr className="w-36 h-6 rounded-2xl border-12 text-sky-400" />
+            <h3 className="text-2xl font-normal text-white md:text-3xl lg:text-4xl unbounded">
               Our Experties.
             </h3>
           </div>
-          <div className="unbounded mx-auto grid gap-2 lg:grid-cols-2">
+          <div className="mx-auto grid gap-2 lg:grid-cols-2 unbounded">
             <Accordion />
           </div>
         </section>
@@ -152,7 +152,7 @@ function Accordion() {
                     className={`transition-all duration-300 ease-in-out ${selected.indexOf(item.key) !== -1 ? "h-fit p-4" : "h-0 p-0"} text-white`}
                   >
                     <p
-                      className={`${index === accordionData.length - 1 ? "m-auto max-w-6/8 text-justify" : ""} ${selected.indexOf(item.key) === -1 && "hidden"} text-md satoshireg font-normal text-white`}
+                      className={`${index === accordionData.length - 1 ? "m-auto max-w-6/8 text-justify" : ""} ${selected.indexOf(item.key) === -1 && "hidden"} text-white text-md font-normal satoshireg`}
                     >
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Quos, qui culpa obcaecati consectetur blanditiis libero

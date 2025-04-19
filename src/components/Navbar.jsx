@@ -59,12 +59,10 @@ export default function Navbar() {
               >
                 <Link
                   key={item.key}
-                  className="unbounded z-10 w-fit text-center font-normal text-white"
+                  className="z-10 w-fit text-center font-normal text-white unbounded"
                   to={item.src}
                 >
-                  <p
-                    className={`text-xs ${currentPage == item.src && "text-sky-400"}`}
-                  >
+                  <p className={`${currentPage == item.src && "text-sky-400"}`}>
                     {item.name}
                   </p>
                 </Link>
@@ -81,7 +79,7 @@ export default function Navbar() {
             onMouseEnter={handleContactHover}
             onMouseLeave={handleContactHover}
           >
-            <p className="unbounded text-[13px] font-normal">CONTACT US</p>
+            <p className="font-normal text-[13px] unbounded">CONTACT US</p>
             {contactHover === true ? (
               <MdArrowForward size={13} />
             ) : (
@@ -116,7 +114,7 @@ export default function Navbar() {
           return (
             <Link
               key={index}
-              className={`text-md unbounded mb-[10px] w-full rounded-full bg-neutral-600 p-4 text-center text-white`}
+              className={`text-md w-full rounded-full bg-neutral-600 p-4 text-center text-white unbounded mb-[10px]`}
               to={item.src}
               onClick={() => setNav(false)}
             >
