@@ -40,7 +40,7 @@ export default function Footer() {
                         placeholder="Email"
                         className="flex w-full lg:w-[200px] rounded-2xl px-4 py-3 text-white bg-stone-800 border border-stone-500 focus:outline-none focus:border-orange-400"
                     />
-                    <button className="bg-sky-400 w-full lg:w-[270px] text-black px-4 py-3 rounded-2xl hover:bg-sky-300 transition unbounded">
+                    <button className="bg-sky-400 w-full lg:w-[270px] text-black px-4 py-3 rounded-2xl hover:bg-sky-300 transition unbounded cursor-pointer">
                         Subsibe for newsletter
                     </button>
                 </form>

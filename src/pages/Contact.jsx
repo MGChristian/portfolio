@@ -68,7 +68,7 @@ export default function Contact() {
             {/* Google Map */}
             <iframe
               title="Google Map"
-              className="w-full h-80 rounded-4xl -mt-2"
+              className="w-full h-80 rounded-4xl mt-3 lg:-mt-2"
               src="https://maps.google.com/maps?q=CWHW%2B9VJ%20Cavite%20Civic%20Center%2C%20Cavite%20City%2C%204103%20Cavite&t=&z=15&ie=UTF8&iwloc=&output=embed"
               allowFullScreen=""
               loading="lazy"
