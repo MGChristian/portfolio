@@ -18,34 +18,24 @@ export default function Contact() {
           </div>
           <div className="w-full max-w-[1300px] mx-auto p-5 bg-stone-900 rounded-4xl text-white unbounded">
             <div className="grid h-fit lg:h-[400px] lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3">
-
-              {/* Hotline */}
               <div className="bg-stone-800 rounded-3xl py-6 px-5">
                 <h2 className="font-normal text-sky-400 text-md mb-5">Hotline:</h2>
                 <p className="text-xl hover:underline hover:text-orange-400 cursor-pointer">431-0416</p>
               </div>
-
-              {/* Address */}
               <div className="bg-stone-800 rounded-3xl py-6 px-5">
                 <h2 className="font-normal text-sky-400 text-md mb-5">Address:</h2>
                 <p className="text-xl hover:underline hover:text-orange-400 cursor-pointer">CvSU-Imus, Palico IV, Imus City, CAV, Philippines</p>
               </div>
-
-              {/* Email */}
               <div className="bg-stone-800 rounded-3xl py-6 px-5">
                 <h2 className="font-normal text-sky-400 mb-5">Email:</h2>
                 <p className="text-xl hover:underline hover:text-orange-400 cursor-pointer">SYNERGY@EMAIL.COM</p>
               </div>
-
-              {/* Opening Hours */}
               <div className="bg-stone-800 rounded-3xl py-6 px-5 lg:col-span-2 h-[200px]">
                 <h2 className="font-normal mb-5 text-sky-400">Opening Hours:</h2>
                 <p className="text-xl mb-3">MON to FRI: 9:00AM - 8:30PM</p>
                 <p className="text-xl mb-3">SAT: 10:00AM - 6:30PM</p>
                 <p className="text-xl">SUN: CLOSED</p>
               </div>
-
-              {/* Follow Us */}
               <div className="bg-stone-800 rounded-3xl py-6 px-5 md:col-span-1 lg:col-span-1 h-[200px]">
                 <h2 className="font-normal mb-5 text-sky-400">Follow Us:</h2>
                 <div className="flex gap-4">
@@ -64,8 +54,6 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-
-            {/* Google Map */}
             <iframe
               title="Google Map"
               className="w-full h-80 rounded-4xl mt-3 lg:-mt-2"
