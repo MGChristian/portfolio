@@ -50,7 +50,7 @@ export default function Team() {
         </section>
         <section className="relative flex h-fit w-full items-center justify-center lg:h-[100vh] lg:max-h-[1920px]">
           <h1 className="text-[27vw] leading-none text-white">VALUES</h1>
-          <div className="md:80 absolute h-60 w-60 translate-y-8 rounded-full border border-black backdrop-blur-sm md:h-80 lg:h-96 lg:w-96"></div>
+          <div className="md:80 absolute h-60 w-60 translate-y-8 rounded-full border border-black backdrop-blur-sm md:h-80 md:w-80 lg:h-96 lg:w-96"></div>
         </section>
         <section className="mx-auto mt-26 mb-24 flex max-w-[1300px] flex-col items-center justify-center gap-4">
           <hr className="h-6 w-36 rounded-2xl border-12 text-sky-400" />
