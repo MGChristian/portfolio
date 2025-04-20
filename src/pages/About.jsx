@@ -54,7 +54,7 @@ export default function About() {
                   />
                 </div>
                 <h4 className="unbounded text-xl font-normal text-white md:text-2xl">
-                  Creating High Quality Digital Solutions
+                  Our Purpose
                 </h4>
               </div>
               <p className="text-md satoshireg font-normal text-white">
@@ -94,7 +94,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className="mx-auto mt-26 mb-48 max-w-[1300px]">
+        <section data-aos="fade-up" className="mx-auto mt-26 mb-15 max-w-[1300px]">
           <div className="animate-slide-in-bottom mb-16 flex items-center gap-4">
             <hr className="h-6 w-36 rounded-2xl border-12 text-sky-400" />
             <h3 className="unbounded text-2xl font-normal text-white md:text-3xl lg:text-4xl">

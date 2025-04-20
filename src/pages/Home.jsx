@@ -1,3 +1,6 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 import { LuSquareMenu } from "react-icons/lu";
 import { TbCircleLetterG } from "react-icons/tb";
 import Footer from "../components/Footer";
@@ -5,11 +8,21 @@ import Form from "../components/Form";
 import Navbar from "../components/Navbar";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: false,
+      offset: 50,
+      delay: 100,
+    });
+  }, [])
+
   return (
     <>
       <Navbar />
       <div className="p-4 lg:p-0">
-        <section className="mb-16 flex flex-col gap-12 lg:mb-0 lg:h-[calc(100vh-80px)] lg:max-h-[900px]">
+        <section className="mb-16 flex flex-col gap-12 lg:mb-0 lg:h-[calc(100vh-80px)] lg:max-h-[900px] px-1">
           <div className="fixed -z-1 h-72 w-full bg-gradient-to-b from-neutral-950 from-10% via-neutral-900 via-50% to-neutral-950 to-90% text-white"></div>
           <div className="mt-25 flex h-64 flex-col items-center justify-center">
             <p1 className="animate-slide-in satoshireg mb-3 text-lg text-white">
@@ -32,21 +45,21 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mx-auto mb-20 max-w-[1300px]">
-          <div className="animate-slide-in-bottom flex items-center gap-4">
+        <section data-aos="fade-up" className="mx-auto mb-10 max-w-[1300px] flex flex-col">
+          <div className="animate-slide-in-bottom flex items-center gap-4 flex flex-col lg:flex-row">
             <hr className="h-6 w-36 rounded-2xl border-12 text-sky-400" />
             <h3 className="unbounded text-2xl font-normal text-white md:text-3xl lg:text-4xl">
               The Minds Behind the Work.
             </h3>
           </div>
-          <div className="animate-slide-in-bottom ml-[165px] flex items-center gap-4">
+          <div className="animate-slide-in-bottom ml-0 lg:ml-[165px] flex items-center gap-4 flex flex-col lg:flex-row">
             <p className="text-md md:text-md lg:text-md satoshireg font-thin text-gray-100">
               WHO WE ARE, WHAT WE DO AND OUR PURPOSE
             </p>
           </div>
         </section>
 
-        <section className="mx-auto max-w-[1300px] px-2 py-10">
+        <section data-aos="fade-up" className="mx-auto max-w-[1300px] px-2 py-10">
           <div className="-mx-2 flex flex-wrap">
             <div className="mb-2 w-full px-1 md:w-1/2">
               <div className="flex h-full flex-col gap-4 rounded-3xl border border-stone-700 bg-stone-900 p-6 text-white shadow-2xl">
@@ -95,7 +108,7 @@ export default function Home() {
                   />
                 </div>
                 <h4 className="unbounded text-xl font-normal md:text-2xl">
-                  Our Purpose
+                  Our Mission
                 </h4>
                 <p className="text-md satoshireg mt-[50px] font-normal">
                   We believe in the power of teamwork, innovation, and
@@ -114,7 +127,7 @@ export default function Home() {
                   />
                 </div>
                 <h4 className="unbounded text-xl font-normal md:text-2xl">
-                  Social Media Marketing
+                  Our Vision
                 </h4>
                 <p className="text-md satoshireg mt-[50px] font-normal">
                   Engage and expand your audience across social media platforms

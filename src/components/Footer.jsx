@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <>
         <footer className="px-5 lg:px-6 w-full mx-auto">
-            <div className="w-full max-w-[1300px] bg-stone-900 rounded-4xl p-4 mx-auto text-white mb-3">
+            <div data-aos="fade-up" className="w-full max-w-[1300px] bg-stone-900 rounded-4xl p-4 mx-auto text-white mb-3">
                 <div className="space-y-3">
                     <div className="bg-stone-800 rounded-3xl p-4 flex flex-col items-start lg:w-[800px]">
                         <Mail className="mb-2 text-sky-400 ml-3 min-w-[24px]" size={24} />
@@ -20,7 +20,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="max-w-[1300px] w-full bg-stone-900 rounded-4xl p-4 mx-auto mb-3">
+            <div data-aos="fade-up" className="max-w-[1300px] w-full bg-stone-900 rounded-4xl p-4 mx-auto mb-15">
                 <div className="text-center mb-4">
                     <p className="text-md text-sky-400 mb-4 unbounded">Follow us:</p>
                     <div className="flex justify-center gap-4">
@@ -41,7 +41,7 @@ export default function Footer() {
                         className="flex w-full lg:w-[200px] rounded-2xl px-4 py-3 text-white bg-stone-800 border border-stone-500 focus:outline-none focus:border-orange-400"
                     />
                     <button className="bg-sky-400 w-full lg:w-[270px] text-black px-4 py-3 rounded-2xl hover:bg-sky-300 transition unbounded cursor-pointer">
-                        Subsibe for newsletter
+                        Subscibe for newsletter
                     </button>
                 </form>
             </div>
