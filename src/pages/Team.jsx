@@ -94,7 +94,7 @@ function Members() {
           <>
             <div
               key={member.ID}
-              className="group relative flex h-fit max-w-[350px] grow flex-col items-center overflow-hidden rounded-2xl bg-linear-to-b from-neutral-200/10 to-neutral-900/25 pt-4 backdrop-blur-sm"
+              className="group relative z-5 flex h-fit max-w-[350px] grow flex-col items-center overflow-hidden rounded-2xl bg-linear-to-b from-neutral-200/10 to-neutral-900/25 pt-4 backdrop-blur-sm"
             >
               <h2
                 className={`absolute left-0 z-3 text-center text-3xl font-bold text-sky-400 transition-all duration-500 ease-in-out group-hover:-translate-y-4 md:text-4xl lg:text-5xl ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}
