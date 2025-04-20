@@ -80,6 +80,7 @@ export default function Navbar() {
             className="flex h-fit items-center gap-2 rounded-full bg-sky-400 px-4 py-4"
             onMouseEnter={handleContactHover}
             onMouseLeave={handleContactHover}
+            to="/contact"
           >
             <p className="unbounded text-[13px] font-normal">CONTACT US</p>
             {contactHover === true ? (

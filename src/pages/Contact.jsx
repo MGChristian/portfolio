@@ -16,8 +16,8 @@ export default function Contact() {
               Let's Work Together
             </h1>
           </div>
-          <div className="w-full max-w-[1300px] mx-auto p-5 bg-stone-900 rounded-4xl text-white unbounded">
-            <div className="grid h-fit lg:h-[400px] lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3">
+          <div className="animate-slide-in-bottom w-full max-w-[1300px] mx-auto p-5 bg-stone-900 rounded-4xl text-white unbounded">
+            <div className="grid h-fit lg:h-[400px] lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2">
               <div className="bg-stone-800 rounded-3xl py-6 px-5">
                 <h2 className="font-normal text-sky-400 text-md mb-5">Hotline:</h2>
                 <p className="text-xl hover:underline hover:text-orange-400 cursor-pointer">431-0416</p>
@@ -56,7 +56,7 @@ export default function Contact() {
             </div>
             <iframe
               title="Google Map"
-              className="w-full h-80 rounded-4xl mt-3 lg:-mt-2"
+              className="w-full h-80 rounded-4xl mt-3 lg:-mt-3"
               src="https://maps.google.com/maps?q=CWHW%2B9VJ%20Cavite%20Civic%20Center%2C%20Cavite%20City%2C%204103%20Cavite&t=&z=15&ie=UTF8&iwloc=&output=embed"
               allowFullScreen=""
               loading="lazy"

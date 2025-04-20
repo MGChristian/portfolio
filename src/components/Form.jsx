@@ -1,7 +1,7 @@
 export default function Form() {
   return (
     <>
-      <div className="bg-stone-1000 m-auto flex min-h-screen  max-w-[1300px] flex-col items-center justify-center px-5 py-12 text-white md:flex-row lg:px-6">
+      <div className="bg-stone-1000 m-auto flex min-h-screen  max-w-[1300px] flex-col items-center justify-center px-5 py-12 text-white md:flex-row lg:px-0">
         <div className="flex-start relative mb-40 flex w-full md:mb-40 md:w-1/2">
           <h1 className="unbounded relative text-[150px] leading-none font-normal text-white lg:text-[180px]">
             <span className="relative z-10 lg:text-[180px]">Let's</span>
