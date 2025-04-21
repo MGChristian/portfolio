@@ -1,8 +1,11 @@
 export default function Form() {
   return (
     <>
-      <div className="bg-stone-1000 m-auto flex min-h-screen max-w-[1300px] flex-col items-center justify-center px-5 py-12 -mt-2 -mb-2 text-white md:flex-row lg:px-0">
-        <div data-aos="fade-up" className="flex-start relative mb-40 flex w-full md:mb-40 md:w-1/2">
+      <div className="bg-stone-1000 m-auto -mt-2 -mb-2 flex min-h-screen max-w-[1300px] flex-col items-center justify-center px-5 py-12 text-white md:flex-row lg:px-0">
+        <div
+          data-aos="fade-up"
+          className="flex-start relative mb-40 flex w-full md:mb-40 md:w-1/2"
+        >
           <h1 className="unbounded relative text-[150px] leading-none font-normal text-white lg:text-[180px]">
             <span className="relative z-10 lg:text-[180px]">Let's</span>
             <span className="absolute top-27 left-1 z-10 text-sky-400 lg:top-32 lg:text-[180px]">
@@ -10,7 +13,10 @@ export default function Form() {
             </span>
           </h1>
         </div>
-        <form data-aos="fade-up" className="satoshireg w-full space-y-6 rounded-4xl bg-stone-900 p-8 md:w-1/2">
+        <form
+          data-aos="fade-up"
+          className="satoshireg w-full space-y-6 rounded-4xl bg-stone-900 p-8 md:w-1/2"
+        >
           <div>
             <label className="mb-1 block">Name</label>
             <input
@@ -33,7 +39,7 @@ export default function Form() {
               placeholder="Write your message"
             ></textarea>
           </div>
-          <button className="unbounded w-full rounded-xl bg-sky-400 px-6 py-3 font-medium text-black transition hover:bg-sky-300 cursor-pointer">
+          <button className="unbounded w-full cursor-pointer rounded-xl bg-sky-400 px-6 py-3 font-medium text-black transition hover:bg-sky-300">
             Submit
           </button>
         </form>
