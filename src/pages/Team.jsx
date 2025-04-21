@@ -4,6 +4,7 @@ import { FaPlus } from "react-icons/fa6";
 import Developer from "../assets/develper.png";
 import TeamPicture from "../assets/team.png";
 import Navbar from "../components/Navbar";
+import Background from "../components/background";
 
 const members = [
   {
@@ -30,42 +31,48 @@ export default function Team() {
   return (
     <>
       <Navbar />
-      <div className="p-4 lg:p-0">
-        <section className="mb-16 flex flex-col gap-12 lg:mb-0 lg:h-[calc(100vh-80px)] lg:max-h-[900px]">
-          <div className="fixed -z-1 h-72 w-full bg-gradient-to-b from-neutral-950 from-10% via-neutral-900 via-50% to-neutral-950 to-90%"></div>
-          <div className="h-full w-full p-0 lg:p-6">
-            <div className="animate-slide-in-bottom relative flex h-full flex-col items-center gap-12 rounded-3xl shadow-2xl">
-              <img
-                src={TeamPicture}
-                className="block h-full w-full rounded-4xl bg-linear-to-b from-transparent to-neutral-900 object-cover object-top"
-              />
-              <div className="absolute h-full w-full rounded-4xl bg-linear-to-b from-transparent to-black"></div>
-              <h1 className="absolute bottom-6 lg:bottom-8 text-center text-3xl font-normal md:text-5xl lg:text-6xl unbounded">
-                <span className="text-white">Hey There! Welcome to</span>
-                <br />
-                <span className="text-sky-400">Synergy!</span>
-              </h1>
-            </div>
+      <Background />
+      <section className="mb-16 flex flex-col gap-12 lg:mb-0 lg:h-[calc(100vh-80px)] lg:max-h-[900px]">
+        <div className="h-full w-full p-0 lg:p-6">
+          <div className="animate-slide-in-bottom relative flex h-full flex-col items-center gap-12 rounded-3xl shadow-2xl">
+            <img
+              src={TeamPicture}
+              className="block h-full w-full rounded-4xl bg-linear-to-b from-transparent to-neutral-900 object-cover object-top"
+            />
+            <div className="absolute h-full w-full rounded-4xl bg-linear-to-b from-transparent to-black"></div>
+            <h1 className="unbounded absolute bottom-6 text-center text-3xl font-normal md:text-5xl lg:bottom-8 lg:text-6xl">
+              <span className="text-white">Hey There! Welcome to</span>
+              <br />
+              <span className="text-sky-400">Synergy!</span>
+            </h1>
           </div>
-        </section>
-        <section data-aos="fade-up" className="relative flex h-fit w-full items-center justify-center lg:h-[100vh] lg:max-h-[1920px]">
-          <h1 className="text-[18vw] lg:text-[20vw] font-normal leading-none text-white unbounded mt-10">VALUES</h1>
-          <div className="md:80 absolute h-95 w-95 translate-y-63 lg:translate-y-8 rounded-full border border-stone-500 backdrop-blur-sm md:h-80 md:w-80 lg:h-110 lg:w-110"></div>
-        </section>
-        <section data-aos="fade-up" className="mx-auto mt-130 lg:mt-20 mb-24 flex max-w-[1300px] flex-col items-center justify-center gap-4">
-          <hr className="h-6 w-36 rounded-2xl border-12 text-sky-400" />
-          <h3 className="text-center text-3xl font-normal flex flex-row text-white md:text-3xl lg:text-5xl unbounded">
-            Say Hello to Our <br className="hidden md:block"/>
-            Squad
-          </h3>
-          <p className="text-center text-lg lg:text-xl text-neutral-300 satoshireg">
-            Get ready to meet the faces behind the magic, the dreamers, the
-            <br className="hidden md:block"/>
-            {" "}doers, and the unstoppable force driving our success.
-          </p>
-        </section>
-        <Members />
-      </div>
+        </div>
+      </section>
+      <section
+        data-aos="fade-up"
+        className="relative flex h-fit w-full items-center justify-center lg:h-[100vh] lg:max-h-[1920px]"
+      >
+        <h1 className="unbounded mt-10 text-[18vw] leading-none font-normal text-white lg:text-[20vw]">
+          VALUES
+        </h1>
+        <div className="md:80 absolute h-95 w-95 translate-y-63 rounded-full border border-stone-500 backdrop-blur-sm md:h-80 md:w-80 lg:h-110 lg:w-110 lg:translate-y-8"></div>
+      </section>
+      <section
+        data-aos="fade-up"
+        className="mx-auto mt-130 mb-24 flex max-w-[1300px] flex-col items-center justify-center gap-4 lg:mt-20"
+      >
+        <hr className="h-6 w-36 rounded-2xl border-12 text-sky-400" />
+        <h3 className="unbounded flex flex-row text-center text-3xl font-normal text-white md:text-3xl lg:text-5xl">
+          Say Hello to Our <br className="hidden md:block" />
+          Squad
+        </h3>
+        <p className="satoshireg text-center text-lg text-neutral-300 lg:text-xl">
+          Get ready to meet the faces behind the magic, the dreamers, the
+          <br className="hidden md:block" /> doers, and the unstoppable force
+          driving our success.
+        </p>
+      </section>
+      <Members />
     </>
   );
 }
