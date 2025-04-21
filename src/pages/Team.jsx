@@ -1,9 +1,9 @@
-import TeamPicture from "../assets/team.png";
-import Developer from "../assets/develper.png";
-import Navbar from "../components/Navbar";
-import { FaPlus } from "react-icons/fa6";
-import { FaFacebookSquare, FaTwitterSquare, FaLinkedin } from "react-icons/fa";
 import { useState } from "react";
+import { FaFacebookSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa6";
+import Developer from "../assets/develper.png";
+import TeamPicture from "../assets/team.png";
+import Navbar from "../components/Navbar";
 
 const members = [
   {
@@ -37,10 +37,10 @@ export default function Team() {
             <div className="animate-slide-in-bottom relative flex h-full flex-col items-center gap-12 rounded-3xl shadow-2xl">
               <img
                 src={TeamPicture}
-                className="block h-full w-full rounded-2xl bg-linear-to-b from-transparent to-neutral-900 object-cover object-top"
+                className="block h-full w-full rounded-4xl bg-linear-to-b from-transparent to-neutral-900 object-cover object-top"
               />
-              <div className="absolute h-full w-full rounded-2xl bg-linear-to-b from-transparent to-black"></div>
-              <h1 className="absolute bottom-8 text-center text-4xl font-bold md:text-5xl lg:text-6xl">
+              <div className="absolute h-full w-full rounded-4xl bg-linear-to-b from-transparent to-black"></div>
+              <h1 className="absolute bottom-6 lg:bottom-8 text-center text-3xl font-normal md:text-5xl lg:text-6xl unbounded">
                 <span className="text-white">Hey There! Welcome to</span>
                 <br />
                 <span className="text-sky-400">Synergy!</span>
@@ -48,20 +48,20 @@ export default function Team() {
             </div>
           </div>
         </section>
-        <section className="relative flex h-fit w-full items-center justify-center lg:h-[100vh] lg:max-h-[1920px]">
-          <h1 className="text-[27vw] leading-none text-white">VALUES</h1>
-          <div className="md:80 absolute h-60 w-60 translate-y-8 rounded-full border border-black backdrop-blur-sm md:h-80 md:w-80 lg:h-96 lg:w-96"></div>
+        <section data-aos="fade-up" className="relative flex h-fit w-full items-center justify-center lg:h-[100vh] lg:max-h-[1920px]">
+          <h1 className="text-[18vw] lg:text-[20vw] font-normal leading-none text-white unbounded mt-10">VALUES</h1>
+          <div className="md:80 absolute h-95 w-95 translate-y-63 lg:translate-y-8 rounded-full border border-stone-500 backdrop-blur-sm md:h-80 md:w-80 lg:h-110 lg:w-110"></div>
         </section>
-        <section className="mx-auto mt-26 mb-24 flex max-w-[1300px] flex-col items-center justify-center gap-4">
+        <section data-aos="fade-up" className="mx-auto mt-130 lg:mt-20 mb-24 flex max-w-[1300px] flex-col items-center justify-center gap-4">
           <hr className="h-6 w-36 rounded-2xl border-12 text-sky-400" />
-          <h3 className="text-center text-2xl font-bold text-white md:text-3xl lg:text-4xl">
-            Say Hello to Our <br />
-            Squard
+          <h3 className="text-center text-3xl font-normal flex flex-row text-white md:text-3xl lg:text-5xl unbounded">
+            Say Hello to Our <br className="hidden md:block"/>
+            Squad
           </h3>
-          <p className="text-center text-xl text-neutral-300">
+          <p className="text-center text-lg lg:text-xl text-neutral-300 satoshireg">
             Get ready to meet the faces behind the magic, the dreamers, the
-            <br />
-            doers, and the unstoppable force driving our success.
+            <br className="hidden md:block"/>
+            {" "}doers, and the unstoppable force driving our success.
           </p>
         </section>
         <Members />
@@ -94,7 +94,7 @@ function Members() {
         return (
           <div
             key={member.ID}
-            className="group relative z-5 flex h-fit max-w-[350px] grow flex-col items-center overflow-hidden rounded-2xl bg-linear-to-b from-neutral-200/10 to-neutral-900/25 pt-4 backdrop-blur-sm"
+            className="group relative z-5 flex h-fit max-w-[350px] grow flex-col items-center overflow-hidden rounded-4xl bg-linear-to-b from-neutral-200/10 to-neutral-900/25 pt-4 backdrop-blur-sm"
           >
             <h2
               className={`absolute left-0 z-3 text-center text-3xl font-bold text-sky-400 transition-all duration-500 ease-in-out group-hover:-translate-y-4 md:text-4xl lg:text-5xl ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}

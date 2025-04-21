@@ -117,10 +117,8 @@ export default function Home() {
                   Our Mission
                 </h4>
                 <p className="text-md satoshireg mt-[50px] font-normal">
-                  We believe in the power of teamwork, innovation, and
-                  continuous learning. Our commitment to quality, efficiency,
-                  and impactful solutions drives us to push boundaries and turn
-                  ideas into reality.
+                Our mission is to collaborate, innovate, and create solutions that bring ideas to life. 
+                Through teamwork, creativity, and technology, we aim to develop impactful projects that solve real-world challenges and inspire growth.
                 </p>
               </div>
             </div>
@@ -136,10 +134,8 @@ export default function Home() {
                   Our Vision
                 </h4>
                 <p className="text-md satoshireg mt-[50px] font-normal">
-                  Engage and expand your audience across social media platforms
-                  with our tailored marketing strategies. From content creation
-                  to ad campaigns, we help you connect with your target
-                  demographic.
+                We envision a future where creativity and technology work hand in hand to shape meaningful solutions. 
+                Our goal is to continuously learn, evolve, and push boundaries, making a lasting impact through our work.
                 </p>
               </div>
             </div>
