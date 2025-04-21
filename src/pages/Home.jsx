@@ -1,6 +1,3 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 import { LuSquareMenu } from "react-icons/lu";
 import { TbCircleLetterG } from "react-icons/tb";
 import Footer from "../components/Footer";
@@ -8,16 +5,6 @@ import Form from "../components/Form";
 import Navbar from "../components/Navbar";
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      easing: "ease-in-out",
-      once: false,
-      offset: 50,
-      delay: 100,
-    });
-  }, []);
-
   return (
     <>
       <Navbar />
