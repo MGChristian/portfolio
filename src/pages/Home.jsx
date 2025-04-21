@@ -165,7 +165,7 @@ function Technologies() {
           className="relative flex h-[800px] w-full flex-col items-center max-md:h-[200vh] max-md:max-h-[1300px]"
           data-aos="fade-up"
         >
-          <div className="absolute z-5 flex flex-wrap text-white">
+          <div className="absolute z-5 flex flex-wrap pt-4 text-white">
             <div className="mx-auto flex items-center">
               <div className="animate-bubble-animation-reverse-slow flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl">15+</h2>
