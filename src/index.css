@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
 @import "tailwindcss";
-
 
 html {
   scroll-behavior: smooth;
@@ -8,8 +7,8 @@ html {
 
 @layer base {
   @font-face {
-    font-family: 'Satoshi-Regular';
-    src: url('./fonts/Satoshi-Regular.woff2') format('woff2');
+    font-family: "Satoshi-Regular";
+    src: url("./fonts/Satoshi-Regular.woff2") format("woff2");
     font-weight: 400;
     font-display: swap;
     font-style: normal;
@@ -17,11 +16,11 @@ html {
 }
 
 .satoshireg {
-  font-family: 'Satoshi-Regular', sans-serif;
+  font-family: "Satoshi-Regular", sans-serif;
 }
 
 .unbounded {
-  font-family: 'Unbounded', sans-serif;
+  font-family: "Unbounded", sans-serif;
 }
 
 /* ANIMATIONS */
@@ -56,3 +55,27 @@ html {
   animation: slideInFromBottom 0.8s ease-out forwards;
 }
 
+@keyframes bubbleAnimation {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-bubble-animation {
+  animation: bubbleAnimation 0.8s ease-in-out infinite alternate;
+}
+
+.animate-bubble-animation-slow {
+  animation: bubbleAnimation 1.5s ease-in-out infinite alternate;
+}
+
+.animate-bubble-animation-reverse {
+  animation: bubbleAnimation 1s ease-in-out infinite alternate-reverse;
+}
+
+.animate-bubble-animation-reverse-slow {
+  animation: bubbleAnimation 1.3s ease-in-out infinite alternate-reverse;
+}

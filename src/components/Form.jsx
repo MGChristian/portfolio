@@ -1,14 +1,16 @@
 export default function Form() {
   return (
     <>
-      <div className="bg-stone-1000 m-auto -mt-2 -mb-2 flex min-h-screen max-w-[1300px] flex-col items-center justify-center px-5 py-12 text-white md:flex-row lg:px-0">
+      <div className="bg-stone-1000 m-auto flex w-full max-w-[1300px] flex-col items-center justify-center px-4 text-white md:flex-row">
         <div
           data-aos="fade-up"
           className="flex-start relative mb-40 flex w-full md:mb-40 md:w-1/2"
         >
-          <h1 className="unbounded relative text-[150px] leading-none font-normal text-white lg:text-[180px]">
-            <span className="relative z-10 lg:text-[180px]">Let's</span>
-            <span className="absolute top-27 left-1 z-10 text-sky-400 lg:top-32 lg:text-[180px]">
+          <h1 className="unbounded relative mx-auto leading-none font-normal text-white lg:mx-0">
+            <span className="relative z-10 text-[6rem] md:text-[7.5rem] lg:text-[10rem]">
+              Let's
+            </span>
+            <span className="absolute top-22 left-1 z-10 text-[6rem] text-sky-400 md:text-[7.5rem] lg:top-28 lg:text-[10rem]">
               Talk!
             </span>
           </h1>

@@ -3,6 +3,7 @@ import { FaPlus } from "react-icons/fa6";
 import { LuSquareMenu } from "react-icons/lu";
 import { TbCircleLetterG } from "react-icons/tb";
 import Navbar from "../components/Navbar";
+import Background from "../components/background";
 
 const accordionData = [
   {
@@ -36,76 +37,77 @@ export default function About() {
   return (
     <>
       <Navbar />
-      <div className="p-4 lg:p-0">
-        <section className="mb-16 flex flex-col gap-12 lg:mb-0 lg:h-[calc(100vh-80px)] lg:max-h-[900px]">
-          <div className="fixed -z-1 h-72 w-full bg-gradient-to-b from-neutral-950 from-10% via-neutral-900 via-50% to-neutral-950 to-90%"></div>
-          <div className="flex-column flex h-64 items-center justify-center">
-            <h1 className="animate-slide-in unbounded text-4xl font-normal text-white text-shadow-black text-shadow-lg md:text-5xl lg:text-6xl">
-              About Synergy
-            </h1>
-          </div>
-          <div className="animate-slide-in-bottom flex min-h-fit max-w-full flex-wrap items-center justify-center gap-2 lg:h-96 lg:flex-nowrap lg:px-8">
-            <div className="flex h-full max-w-[710px] flex-col gap-12 rounded-3xl border border-stone-700 bg-stone-900 p-6 shadow-2xl lg:w-1/2">
-              <div className="flex flex-col gap-4">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700">
-                  <TbCircleLetterG
-                    size={50}
-                    className="text-sky-400 drop-shadow-[0_0_8px_rgba(96,165,250,1)]"
-                  />
-                </div>
-                <h4 className="unbounded text-xl font-normal text-white md:text-2xl">
-                  Our Purpose
-                </h4>
+      <Background />
+      <section className="mb-16 flex flex-col gap-12 p-4 lg:mb-0 lg:h-[calc(100vh-80px)] lg:max-h-[900px]">
+        <div className="flex-column flex h-64 items-center justify-center">
+          <h1 className="animate-slide-in unbounded text-4xl font-normal text-white text-shadow-black text-shadow-lg md:text-5xl lg:text-6xl">
+            About Synergy
+          </h1>
+        </div>
+        <div className="animate-slide-in-bottom flex min-h-fit max-w-full flex-wrap items-center justify-center gap-2 lg:h-96 lg:flex-nowrap lg:px-8">
+          <div className="flex h-full max-w-[710px] flex-col gap-12 rounded-3xl border border-stone-700 bg-stone-900 p-6 shadow-2xl lg:w-1/2">
+            <div className="flex flex-col gap-4">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700">
+                <TbCircleLetterG
+                  size={50}
+                  className="text-sky-400 drop-shadow-[0_0_8px_rgba(96,165,250,1)]"
+                />
               </div>
-              <p className="text-md satoshireg font-normal text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Temporibus, ullam blanditiis? Laboriosam quas officiis excepturi
-                molestiae et architecto dolore possimus doloribus officia? Magni
-                tenetur reprehenderit, veniam a quasi debitis nostrum! Lorem
-                ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
-                sapiente debitis adipisci voluptate amet! Ipsa perspiciatis
-                impedit, facilis eius unde sint exercitationem recusandae
-                excepturi. Expedita labore beatae blanditiis unde optio!
-              </p>
+              <h4 className="unbounded text-xl font-normal text-white md:text-2xl">
+                Our Purpose
+              </h4>
             </div>
-            <div className="flex h-full max-w-[710px] flex-col gap-12 rounded-3xl border border-stone-700 bg-stone-900 p-6 pb-12 shadow-2xl lg:w-1/2">
-              <div className="flex flex-col gap-4">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700">
-                  <LuSquareMenu
-                    size={50}
-                    className="text-sky-400 drop-shadow-[0_0_8px_rgba(96,165,250,1)]"
-                  />
-                </div>
-                <h4 className="unbounded text-xl font-normal text-white md:text-2xl">
-                  Our Commitment
-                </h4>
-              </div>
-              <p className="text-md satoshireg font-normal text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Temporibus, ullam blanditiis? Laboriosam quas officiis excepturi
-                molestiae et architecto dolore possimus doloribus officia? Magni
-                tenetur reprehenderit, veniam a quasi debitis nostrum! Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Sed,
-                provident facere amet numquam nisi eaque, et cupiditate,
-                excepturi quam voluptatem ipsa voluptatibus. Id totam saepe
-                aliquam! Mollitia illum quo debitis.
-              </p>
-            </div>
+            <p className="text-md satoshireg font-normal text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, ullam blanditiis? Laboriosam quas officiis excepturi
+              molestiae et architecto dolore possimus doloribus officia? Magni
+              tenetur reprehenderit, veniam a quasi debitis nostrum! Lorem ipsum
+              dolor sit amet consectetur, adipisicing elit. Ipsa sapiente
+              debitis adipisci voluptate amet! Ipsa perspiciatis impedit,
+              facilis eius unde sint exercitationem recusandae excepturi.
+              Expedita labore beatae blanditiis unde optio!
+            </p>
           </div>
-        </section>
+          <div className="flex h-full max-w-[710px] flex-col gap-12 rounded-3xl border border-stone-700 bg-stone-900 p-6 pb-12 shadow-2xl lg:w-1/2">
+            <div className="flex flex-col gap-4">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700">
+                <LuSquareMenu
+                  size={50}
+                  className="text-sky-400 drop-shadow-[0_0_8px_rgba(96,165,250,1)]"
+                />
+              </div>
+              <h4 className="unbounded text-xl font-normal text-white md:text-2xl">
+                Our Commitment
+              </h4>
+            </div>
+            <p className="text-md satoshireg font-normal text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, ullam blanditiis? Laboriosam quas officiis excepturi
+              molestiae et architecto dolore possimus doloribus officia? Magni
+              tenetur reprehenderit, veniam a quasi debitis nostrum! Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Sed, provident facere
+              amet numquam nisi eaque, et cupiditate, excepturi quam voluptatem
+              ipsa voluptatibus. Id totam saepe aliquam! Mollitia illum quo
+              debitis.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section data-aos="fade-up" className="mx-auto mt-26 mb-15 max-w-[1300px]">
-          <div className="animate-slide-in-bottom mb-16 flex items-center gap-4">
-            <hr className="h-6 w-36 rounded-2xl border-12 text-sky-400" />
-            <h3 className="unbounded text-2xl font-normal text-white md:text-3xl lg:text-4xl">
-              Our Experties.
-            </h3>
-          </div>
-          <div className="unbounded mx-auto grid gap-2 lg:grid-cols-2">
-            <Accordion />
-          </div>
-        </section>
-      </div>
+      <section
+        data-aos="fade-up"
+        className="mx-auto mt-26 mb-15 max-w-[1300px]"
+      >
+        <div className="animate-slide-in-bottom mb-16 flex items-center gap-4">
+          <hr className="h-6 w-36 rounded-2xl border-12 text-sky-400" />
+          <h3 className="unbounded text-2xl font-normal text-white md:text-3xl lg:text-4xl">
+            Our Experties.
+          </h3>
+        </div>
+        <div className="unbounded mx-auto grid gap-2 lg:grid-cols-2">
+          <Accordion />
+        </div>
+      </section>
     </>
   );
 }
