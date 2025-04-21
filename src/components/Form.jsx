@@ -15,27 +15,27 @@ export default function Form() {
         </div>
         <form
           data-aos="fade-up"
-          className="satoshireg w-full space-y-6 rounded-4xl bg-stone-900 p-8 md:w-1/2"
+          className="satoshireg w-full space-y-6 rounded-4xl bg-linear-to-b from-stone-400/5 to-stone-800/20 p-8 md:w-1/2"
         >
           <div>
             <label className="mb-1 block">Name</label>
             <input
               type="text"
-              className="w-full rounded-2xl border border-transparent bg-stone-800 px-4 py-4 focus:border-orange-400 focus:outline-none"
+              className="w-full rounded-2xl border border-transparent bg-linear-to-b from-stone-800/65 to-stone-800/75 px-4 py-4 focus:border-orange-400 focus:outline-none"
             />
           </div>
           <div>
             <label className="mb-1 block">Email</label>
             <input
               type="email"
-              className="w-full rounded-2xl border border-transparent bg-stone-800 px-4 py-4 focus:border-orange-500 focus:outline-none"
+              className="w-full rounded-2xl border border-transparent bg-linear-to-b from-stone-800/65 to-stone-800/75 px-4 py-4 focus:border-orange-500 focus:outline-none"
             />
           </div>
           <div>
             <label className="mb-1 block">Message</label>
             <textarea
               rows="4"
-              className="w-full rounded-2xl border border-transparent bg-stone-800 px-4 py-4 focus:border-orange-500 focus:outline-none"
+              className="w-full rounded-2xl border border-transparent bg-linear-to-b from-stone-800/65 to-stone-800/75 px-4 py-4 focus:border-orange-500 focus:outline-none"
               placeholder="Write your message"
             ></textarea>
           </div>
