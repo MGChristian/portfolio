@@ -1,5 +1,6 @@
 import { LuSquareMenu } from "react-icons/lu";
 import { TbCircleLetterG } from "react-icons/tb";
+import Marquee from "react-fast-marquee";
 import Footer from "../components/Footer";
 import Form from "../components/Form";
 import Navbar from "../components/Navbar";
@@ -8,8 +9,8 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="p-4 lg:p-0">
-        <section className="mb-16 flex flex-col gap-12 px-1 lg:mb-0 lg:h-[calc(100vh-80px)] lg:max-h-[900px]">
+      <div>
+        <section className="relative mb-16 flex h-[calc(100vh-80px)] flex-col items-center gap-12 bg-linear-to-b from-transparent to-sky-400 px-1 lg:mb-0 lg:max-h-[900px]">
           <div className="fixed -z-1 h-72 w-full bg-gradient-to-b from-neutral-950 from-10% via-neutral-900 via-50% to-neutral-950 to-90% text-white"></div>
           <div className="mt-25 flex h-64 flex-col items-center justify-center">
             <p1 className="animate-slide-in satoshireg mb-3 text-lg text-white">
@@ -29,6 +30,11 @@ export default function Home() {
               </span>{" "}
               AND INNOVATE TOGETHER
             </h1>
+          </div>
+          <div className="absolute bottom-32 w-full overflow-hidden text-9xl font-bold text-white/80">
+            <Marquee className="overflow-hidden" speed={200}>
+              <p>Best Team Developer</p>
+            </Marquee>
           </div>
         </section>
 
