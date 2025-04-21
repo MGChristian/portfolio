@@ -83,11 +83,10 @@ export default function Navbar() {
             to="/contact"
           >
             <p className="unbounded text-[13px] font-normal">CONTACT US</p>
-            {contactHover === true ? (
-              <MdArrowForward size={13} />
-            ) : (
-              <MdArrowOutward size={13} />
-            )}
+            <MdArrowForward
+              size={13}
+              className={`transition-all duration-300 ease-in-out ${contactHover === true ? "" : "-rotate-45"}`}
+            />
           </Link>
         </div>
       </nav>

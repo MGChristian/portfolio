@@ -7,19 +7,19 @@ import { useState } from "react";
 
 const members = [
   {
-    ID: 1,
+    ID: "member-1",
     memberName: "Christian Gutierrez",
     memberRole: "Developer",
     memberRoleName: "Front End",
   },
   {
-    ID: 2,
+    ID: "member-2",
     memberName: "Christian Gutierrez",
     memberRole: "Developer",
     memberRoleName: "Front End",
   },
   {
-    ID: 3,
+    ID: "member-3",
     memberName: "Christian Gutierrez",
     memberRole: "Developer",
     memberRoleName: "Front End",
@@ -64,9 +64,7 @@ export default function Team() {
             doers, and the unstoppable force driving our success.
           </p>
         </section>
-        <section className="mx-auto mb-48 flex max-w-[1300px] flex-wrap items-center justify-center gap-4">
-          <Members />
-        </section>
+        <Members />
       </div>
     </>
   );
@@ -88,58 +86,59 @@ function Members() {
   }
 
   return (
-    <>
+    <section
+      data-aos="fade-up"
+      className="mx-auto mb-48 flex max-w-[1300px] flex-wrap items-center justify-center gap-4"
+    >
       {members.map((member) => {
         return (
-          <>
-            <div
-              key={member.ID}
-              className="group relative z-5 flex h-fit max-w-[350px] grow flex-col items-center overflow-hidden rounded-2xl bg-linear-to-b from-neutral-200/10 to-neutral-900/25 pt-4 backdrop-blur-sm"
+          <div
+            key={member.ID}
+            className="group relative z-5 flex h-fit max-w-[350px] grow flex-col items-center overflow-hidden rounded-2xl bg-linear-to-b from-neutral-200/10 to-neutral-900/25 pt-4 backdrop-blur-sm"
+          >
+            <h2
+              className={`absolute left-0 z-3 text-center text-3xl font-bold text-sky-400 transition-all duration-500 ease-in-out group-hover:-translate-y-4 md:text-4xl lg:text-5xl ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}
             >
-              <h2
-                className={`absolute left-0 z-3 text-center text-3xl font-bold text-sky-400 transition-all duration-500 ease-in-out group-hover:-translate-y-4 md:text-4xl lg:text-5xl ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}
+              {member.memberRoleName}
+            </h2>
+            <p
+              className={`absolute top-16 right-0 z-3 text-2xl text-white transition-all duration-500 ease-in-out group-hover:-translate-y-4 ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}
+            >
+              {member.memberRole}
+            </p>
+            <img
+              src={Developer}
+              className={`z-2 mt-16 h-96 transition-all duration-500 ease-in-out group-hover:translate-y-4 ${clickedMembers.indexOf(member.ID) === -1 ? "grayscale" : "translate-y-4"}`}
+            />
+            <div className="absolute bottom-4 z-3 flex w-full justify-center gap-4">
+              <div
+                className="bottom-0 z-2 rounded-xl bg-white p-2"
+                onClick={() => handleClickMember(member.ID)}
               >
-                {member.memberRoleName}
-              </h2>
-              <p
-                className={`absolute top-16 right-0 z-3 text-2xl text-white transition-all duration-500 ease-in-out group-hover:-translate-y-4 ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}
-              >
-                {member.memberRole}
-              </p>
-              <img
-                src={Developer}
-                className={`z-2 mt-16 h-96 transition-all duration-500 ease-in-out group-hover:translate-y-4 ${clickedMembers.indexOf(member.ID) === -1 ? "grayscale" : "translate-y-4"}`}
-              />
-              <div className="absolute bottom-4 z-3 flex w-full justify-center gap-4">
-                <div
-                  className="bottom-0 z-2 rounded-xl bg-white p-2"
-                  onClick={() => handleClickMember(member.ID)}
-                >
-                  <FaPlus className="text-black" size={30} />
-                </div>
-                <div
-                  className={`bottom-0 rounded-xl bg-white p-2 ${clickedMembers.indexOf(member.ID) === -1 ? "absolute" : ""}`}
-                >
-                  <FaLinkedin className="text-black" size={30} />
-                </div>
-                <div
-                  className={`bottom-0 rounded-xl bg-white p-2 ${clickedMembers.indexOf(member.ID) === -1 ? "absolute" : ""}`}
-                >
-                  <FaFacebookSquare className="text-black" size={30} />
-                </div>
-                <div
-                  className={`bottom-0 rounded-xl bg-white p-2 ${clickedMembers.indexOf(member.ID) === -1 ? "absolute" : ""}`}
-                >
-                  <FaTwitterSquare className="text-black" size={30} />
-                </div>
+                <FaPlus className="text-black" size={30} />
               </div>
               <div
-                className={`absolute top-20 rotate-180 rounded-full transition-all duration-300 ease-in-out ${clickedMembers.indexOf(member.ID) === -1 ? "h-0 w-0" : "h-[500px] w-[500px] bg-sky-400"}`}
-              ></div>
+                className={`bottom-0 rounded-xl bg-white p-2 ${clickedMembers.indexOf(member.ID) === -1 ? "absolute" : ""}`}
+              >
+                <FaLinkedin className="text-black" size={30} />
+              </div>
+              <div
+                className={`bottom-0 rounded-xl bg-white p-2 ${clickedMembers.indexOf(member.ID) === -1 ? "absolute" : ""}`}
+              >
+                <FaFacebookSquare className="text-black" size={30} />
+              </div>
+              <div
+                className={`bottom-0 rounded-xl bg-white p-2 ${clickedMembers.indexOf(member.ID) === -1 ? "absolute" : ""}`}
+              >
+                <FaTwitterSquare className="text-black" size={30} />
+              </div>
             </div>
-          </>
+            <div
+              className={`absolute top-20 rotate-180 rounded-full transition-all duration-300 ease-in-out ${clickedMembers.indexOf(member.ID) === -1 ? "h-0 w-0" : "h-[500px] w-[500px] bg-sky-400"}`}
+            ></div>
+          </div>
         );
       })}
-    </>
+    </section>
   );
 }

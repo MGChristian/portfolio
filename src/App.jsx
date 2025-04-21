@@ -9,7 +9,7 @@ import Team from "./pages/Team";
 function App() {
   return (
     <>
-      <ScrollToTop/>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
