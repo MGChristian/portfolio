@@ -101,21 +101,21 @@ function Members() {
         return (
           <div
             key={member.ID}
-            className="group relative z-5 flex h-fit max-w-[500px] grow flex-col items-center overflow-hidden rounded-4xl bg-linear-to-b from-neutral-200/10 to-neutral-900/25 pt-4 backdrop-blur-sm"
+            className="group relative z-5 flex h-fit max-w-[400px] grow flex-col items-center overflow-hidden rounded-4xl bg-linear-to-b from-neutral-200/10 to-neutral-900/25 pt-4 backdrop-blur-sm"
           >
             <h2
-              className={`absolute left-0 z-3 text-center text-3xl font-semibold text-sky-400 transition-all duration-500 ease-in-out group-hover:-translate-y-4 md:text-4xl lg:text-5xl unbounded ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}
+              className={`unbounded absolute left-0 z-3 text-center text-3xl font-semibold text-sky-400 transition-all duration-500 ease-in-out group-hover:-translate-y-4 md:text-4xl lg:text-5xl ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}
             >
               {member.memberRoleName}
             </h2>
             <p
-              className={`absolute top-16 right-0 z-3 text-2xl text-white transition-all duration-500 ease-in-out group-hover:-translate-y-4 unbounded uppercase ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}
+              className={`unbounded absolute top-16 right-0 z-3 text-2xl text-white uppercase transition-all duration-500 ease-in-out group-hover:-translate-y-4 ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}
             >
               {member.memberRole}
             </p>
             <img
               src={Developer}
-              className={`z-2 mt-16 h-100 w-[70%] mx-auto transition-all duration-500 ease-in-out group-hover:translate-y-4 ${clickedMembers.indexOf(member.ID) === -1 ? "grayscale" : "translate-y-4"}`}
+              className={`z-2 mx-auto mt-16 h-100 w-[70%] transition-all duration-500 ease-in-out ${clickedMembers.indexOf(member.ID) === -1 ? "grayscale group-hover:translate-y-4" : ""}`}
             />
             <div className="absolute bottom-4 z-3 flex w-full justify-center gap-4">
               <div
