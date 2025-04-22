@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 import Form from "../components/Form";
 import Navbar from "../components/Navbar";
 
-import { FaJava, FaReact } from "react-icons/fa";
+import { FaBullseye, FaEye, FaJava, FaReact } from "react-icons/fa";
 import {
   SiArduino,
   SiBootstrap,
@@ -305,8 +305,8 @@ function TeamIntroduction() {
           <div className="mb-2 w-full px-1 md:w-1/2">
             <div className="flex h-full flex-col gap-4 rounded-3xl border border-stone-700 bg-stone-900 p-6 text-white shadow-2xl">
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700">
-                <TbCircleLetterG
-                  size={50}
+                <FaBullseye
+                  size={40}
                   className="text-sky-400 drop-shadow-[0_0_8px_rgba(96,165,250,1)]"
                 />
               </div>
@@ -324,8 +324,8 @@ function TeamIntroduction() {
           <div className="mb-2 w-full px-1 md:w-1/2">
             <div className="flex h-full flex-col gap-4 rounded-3xl border border-stone-700 bg-stone-900 p-6 text-white shadow-2xl">
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700">
-                <TbCircleLetterG
-                  size={50}
+                <FaEye
+                  size={40}
                   className="text-sky-400 drop-shadow-[0_0_8px_rgba(96,165,250,1)]"
                 />
               </div>
