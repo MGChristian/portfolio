@@ -96,7 +96,7 @@ export default function About() {
 
       <section
         data-aos="fade-up"
-        className="mx-auto mt-26 mb-15 max-w-[1300px]"
+        className="mx-auto mt-26 mb-15 w-full max-w-[1300px] px-4"
       >
         <div className="animate-slide-in-bottom mb-16 flex items-center gap-4">
           <hr className="h-6 w-36 rounded-2xl border-12 text-sky-400" />

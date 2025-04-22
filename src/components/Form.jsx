@@ -24,6 +24,7 @@ export default function Form() {
             <input
               type="text"
               className="w-full rounded-2xl border border-transparent bg-linear-to-b from-stone-800/65 to-stone-800/75 px-4 py-4 focus:border-orange-400 focus:outline-none"
+              placeholder="Your Name"
             />
           </div>
           <div>
@@ -31,6 +32,7 @@ export default function Form() {
             <input
               type="email"
               className="w-full rounded-2xl border border-transparent bg-linear-to-b from-stone-800/65 to-stone-800/75 px-4 py-4 focus:border-orange-500 focus:outline-none"
+              placeholder="Your Email"
             />
           </div>
           <div>
@@ -38,7 +40,7 @@ export default function Form() {
             <textarea
               rows="4"
               className="w-full rounded-2xl border border-transparent bg-linear-to-b from-stone-800/65 to-stone-800/75 px-4 py-4 focus:border-orange-500 focus:outline-none"
-              placeholder="Write your message"
+              placeholder="Write your message..."
             ></textarea>
           </div>
           <button className="unbounded w-full cursor-pointer rounded-xl bg-sky-400 px-6 py-3 font-medium text-black transition hover:bg-sky-300">

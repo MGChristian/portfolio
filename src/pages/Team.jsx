@@ -33,7 +33,7 @@ export default function Team() {
       <Navbar />
       <Background />
       <section className="mb-16 flex flex-col gap-12 lg:mb-0 lg:h-[calc(100vh-80px)] lg:max-h-[900px]">
-        <div className="h-full w-full p-0 lg:p-6">
+        <div className="h-full w-full max-w-[1300px] mx-auto px-4 lg:p-4">
           <div className="animate-slide-in-bottom relative flex h-full flex-col items-center gap-12 rounded-3xl shadow-2xl">
             <img
               src={TeamPicture}
@@ -50,7 +50,7 @@ export default function Team() {
       </section>
       <section
         data-aos="fade-up"
-        className="relative flex h-fit w-full items-center justify-center lg:h-[100vh] lg:max-h-[1920px]"
+        className="relative flex h-fit w-full max-w-[1300px] mx-auto px-4 items-center justify-center lg:h-[100vh] lg:max-h-[1920px]"
       >
         <h1 className="unbounded mt-10 text-[18vw] leading-none font-normal text-white lg:text-[20vw]">
           VALUES
@@ -59,7 +59,7 @@ export default function Team() {
       </section>
       <section
         data-aos="fade-up"
-        className="mx-auto mt-130 mb-24 flex max-w-[1300px] flex-col items-center justify-center gap-4 lg:mt-20"
+        className="mx-auto mt-130 mb-24 flex w-full max-w-[1300px] px-4 flex-col items-center justify-center gap-4 lg:mt-20"
       >
         <hr className="h-6 w-36 rounded-2xl border-12 text-sky-400" />
         <h3 className="unbounded flex flex-row text-center text-3xl font-normal text-white md:text-3xl lg:text-5xl">
@@ -95,13 +95,13 @@ function Members() {
   return (
     <section
       data-aos="fade-up"
-      className="mx-auto mb-48 flex max-w-[1300px] flex-wrap items-center justify-center gap-3"
+      className="mx-auto mb-48 flex w-full max-w-[1300px] px-4 flex-wrap items-center justify-center gap-3"
     >
       {members.map((member) => {
         return (
           <div
             key={member.ID}
-            className="group relative z-5 flex h-fit max-w-[400px] grow flex-col items-center overflow-hidden rounded-4xl bg-linear-to-b from-neutral-200/10 to-neutral-900/25 pt-4 backdrop-blur-sm"
+            className="group relative z-5 flex h-fit max-w-[500px] grow flex-col items-center overflow-hidden rounded-4xl bg-linear-to-b from-neutral-200/10 to-neutral-900/25 pt-4 backdrop-blur-sm"
           >
             <h2
               className={`unbounded absolute left-0 z-3 text-center text-3xl font-semibold text-sky-400 transition-all duration-500 ease-in-out group-hover:-translate-y-4 md:text-4xl lg:text-5xl ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}
