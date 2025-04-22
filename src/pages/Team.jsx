@@ -109,7 +109,7 @@ function Members() {
               {member.memberRoleName}
             </h2>
             <p
-              className={`unbounded absolute top-16 right-0 z-3 text-2xl text-white uppercase transition-all duration-500 ease-in-out group-hover:-translate-y-4 ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}
+              className={`unbounded absolute top-16 right-0 z-3 text-xl text-white uppercase transition-all duration-500 ease-in-out group-hover:-translate-y-4 ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}
             >
               {member.memberRole}
             </p>
