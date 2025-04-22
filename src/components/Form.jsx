@@ -1,4 +1,37 @@
+import { useState } from "react";
+
 export default function Form() {
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [errors, setErrors] = useState({});
+  const [success, setSuccess] = useState(false);
+
+  const validate = () => {
+    let newErrors = {};
+    if (!formData.name.trim()) newErrors.name = "Name is required.";
+    if (!formData.email.includes("@")) newErrors.email = "Enter an email.";
+    if (!formData.message.trim()) newErrors.message = "Message cannot be empty.";
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setErrors({ ...errors, [e.target.name]: "" });
+    setSuccess(false);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validate()) {
+      console.log("Form submitted", formData);
+      setSuccess(true);
+      setFormData({ name: "", email: "", message: "" });
+    }
+    else{
+      setSuccess(false);
+    }
+  };
+
   return (
     <>
       <div className="bg-stone-1000 m-auto flex w-full max-w-[1300px] flex-col items-center justify-center px-4 text-white md:flex-row">
@@ -16,34 +49,65 @@ export default function Form() {
           </h1>
         </div>
         <form
+          onSubmit={handleSubmit}
           data-aos="fade-up"
-          className="satoshireg w-full space-y-6 rounded-4xl bg-linear-to-b from-stone-400/5 to-stone-800/20 p-8 md:w-1/2"
+          className="satoshireg w-full space-y-4 rounded-4xl bg-linear-to-b from-stone-400/5 to-stone-800/20 p-6 md:w-1/2"
         >
           <div>
+            <div className="h-5 flex items-center justify-center">
+              {success && (
+              <p className="text-green-500 text-sm">
+                Message sent successfully!
+              </p>
+              )}
+            </div>
             <label className="mb-1 block">Name</label>
             <input
               type="text"
-              className="w-full rounded-2xl border border-transparent bg-linear-to-b from-stone-800/65 to-stone-800/75 px-4 py-4 focus:border-orange-400 focus:outline-none"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              autoComplete="off"
+              className={'w-full rounded-2xl border border-transparent bg-linear-to-b from-stone-800/65 to-stone-800/75 px-4 py-3 focus:border-orange-400 focus:outline-none ${errors.name ? "border-red-500" : "border-gray-300"}'}
               placeholder="Your Name"
             />
+            <div className="h-5">
+              {errors.name && <p className="text-red-400 text-sm">{errors.name}</p>}
+            </div>
           </div>
           <div>
             <label className="mb-1 block">Email</label>
             <input
               type="email"
-              className="w-full rounded-2xl border border-transparent bg-linear-to-b from-stone-800/65 to-stone-800/75 px-4 py-4 focus:border-orange-500 focus:outline-none"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              autoComplete="off"
+              className={'w-full rounded-2xl border border-transparent bg-linear-to-b from-stone-800/65 to-stone-800/75 px-4 py-3 focus:border-orange-500 focus:outline-none ${errors.email ? "border-red-500" : "border-gray-300"}'}
               placeholder="Your Email"
             />
+            <div className="h-5">
+              {errors.email && <p className="text-red-400 text-sm">{errors.email}</p>}
+            </div>
           </div>
           <div>
             <label className="mb-1 block">Message</label>
             <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              autoComplete="off"
               rows="4"
-              className="w-full rounded-2xl border border-transparent bg-linear-to-b from-stone-800/65 to-stone-800/75 px-4 py-4 focus:border-orange-500 focus:outline-none"
+              className={'w-full rounded-2xl border border-transparent bg-linear-to-b from-stone-800/65 to-stone-800/75 px-4 py-3 focus:border-orange-500 focus:outline-none ${errors.message ? "border-red-500" : "border-gray-300"}'}
               placeholder="Write your message..."
             ></textarea>
+            <div className="h-5">
+              {errors.message && <p className="text-red-400 text-sm">{errors.message}</p>}
+            </div>
           </div>
-          <button className="unbounded w-full cursor-pointer rounded-xl bg-sky-400 px-6 py-3 font-medium text-black transition hover:bg-sky-300">
+          <button
+            type="submit"
+            className="unbounded w-full cursor-pointer rounded-xl bg-sky-400 px-6 py-3 font-medium text-black transition hover:bg-sky-300">
             Submit
           </button>
         </form>
