@@ -58,14 +58,8 @@ export default function About() {
               </h4>
             </div>
             <p className="text-md satoshireg font-normal text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, ullam blanditiis? Laboriosam quas officiis excepturi
-              molestiae et architecto dolore possimus doloribus officia? Magni
-              tenetur reprehenderit, veniam a quasi debitis nostrum! Lorem ipsum
-              dolor sit amet consectetur, adipisicing elit. Ipsa sapiente
-              debitis adipisci voluptate amet! Ipsa perspiciatis impedit,
-              facilis eius unde sint exercitationem recusandae excepturi.
-              Expedita labore beatae blanditiis unde optio!
+            We believe in the power of teamwork, innovation, and continuous learning.
+            Our commitment to quality, efficiency, and impactful solutions drives us to push boundaries and turn ideas into reality.
             </p>
           </div>
           <div className="flex h-full max-w-[710px] flex-col gap-12 rounded-3xl border border-stone-700 bg-stone-900 p-6 pb-12 shadow-2xl lg:w-1/2">

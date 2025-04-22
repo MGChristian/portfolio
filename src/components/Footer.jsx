@@ -54,7 +54,7 @@ export default function Footer() {
         </div>
         <div
           data-aos="fade-up"
-          className="mx-auto mb-15 w-full max-w-[1300px] rounded-4xl bg-linear-to-b from-stone-900/65 to-stone-900/75 p-4"
+          className="mx-auto mb-15 w-full max-w-[1300px] rounded-4xl bg-linear-to-b from-stone-900/30 to-stone-900/65 p-4"
         >
           <div className="mb-4 text-center">
             <p className="text-md unbounded mb-4 text-sky-400">Follow us:</p>
