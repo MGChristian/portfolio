@@ -1,7 +1,7 @@
-import { Route, Routes } from "react-router-dom";
-import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -16,7 +16,7 @@ function App() {
       easing: "ease-in-out",
       once: false,
       offset: 50,
-      delay: 100,
+      delay: 500,
     });
   }, []);
   return (

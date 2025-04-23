@@ -12,18 +12,35 @@ const members = [
     memberName: "Christian Gutierrez",
     memberRole: "Developer",
     memberRoleName: "Back End",
+    memberSkill: "Specializes in server-side programming using Java and PHP, manages data with MySQL."
   },
   {
     ID: "member-2",
-    memberName: "Christian Gutierrez",
+    memberName: "Jericho Vincent Cuevas",
     memberRole: "Developer",
     memberRoleName: "Front End",
+    memberSkill: "Focuses on building the user interface and ensuring responsive design."
   },
   {
     ID: "member-3",
-    memberName: "Christian Gutierrez",
+    memberName: "Luis Angelo Asuncion",
     memberRole: "Manager",
     memberRoleName: "Project",
+    memberSkill: "Oversees task distribution, progress tracking and manages timelines."
+  },
+  {
+    ID: "member-4",
+    memberName: "Nica Ilang-Ilang",
+    memberRole: "Design",
+    memberRoleName: "UI/UX",
+    memberSkill: "Creates wireframes, prototypes, and visual designs using tools like Figma or Framer, and ensures a smooth user experience."
+  },
+  {
+    ID: "member-5",
+    memberName: "Jeremy Reyes",
+    memberRole: "Assurance",
+    memberRoleName: "Quality",
+    memberSkill: "Conducts testing (unit, integration, UI), bug tracking, and deploys the project."
   },
 ];
 
@@ -95,54 +112,70 @@ function Members() {
   return (
     <section
       data-aos="fade-up"
-      className="mx-auto mb-48 flex w-full max-w-[1300px] px-4 flex-wrap items-center justify-center gap-3"
+      className="mx-auto mb-48 flex w-full flex-wrap items-center justify-center gap-3"
     >
       {members.map((member) => {
         return (
           <div
             key={member.ID}
-            className="group relative z-5 flex h-fit max-w-[500px] grow flex-col items-center overflow-hidden rounded-4xl bg-linear-to-b from-neutral-200/10 to-neutral-900/25 pt-4 backdrop-blur-sm"
+            className="flex flex-col items-center w-full lg:max-w-[400px] px-4 lg:px-0"
           >
-            <h2
-              className={`unbounded absolute left-0 z-3 text-center text-3xl font-semibold text-sky-400 transition-all duration-500 ease-in-out group-hover:-translate-y-4 md:text-4xl lg:text-5xl ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}
-            >
-              {member.memberRoleName}
-            </h2>
-            <p
-              className={`unbounded absolute top-16 right-0 z-3 text-xl text-white uppercase transition-all duration-500 ease-in-out group-hover:-translate-y-4 ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}
-            >
-              {member.memberRole}
-            </p>
-            <img
-              src={Developer}
-              className={`z-2 mx-auto mt-16 h-100 w-[70%] transition-all duration-500 ease-in-out ${clickedMembers.indexOf(member.ID) === -1 ? "grayscale group-hover:translate-y-4" : ""}`}
-            />
-            <div className="absolute bottom-4 z-3 flex w-full justify-center gap-4">
-              <div
-                className="bottom-0 z-2 rounded-xl bg-white p-2"
-                onClick={() => handleClickMember(member.ID)}
-              >
-                <FaPlus className="text-black" size={30} />
-              </div>
-              <div
-                className={`bottom-0 rounded-xl bg-white p-2 ${clickedMembers.indexOf(member.ID) === -1 ? "absolute" : ""}`}
-              >
-                <FaLinkedin className="text-black" size={30} />
-              </div>
-              <div
-                className={`bottom-0 rounded-xl bg-white p-2 ${clickedMembers.indexOf(member.ID) === -1 ? "absolute" : ""}`}
-              >
-                <FaFacebookSquare className="text-black" size={30} />
-              </div>
-              <div
-                className={`bottom-0 rounded-xl bg-white p-2 ${clickedMembers.indexOf(member.ID) === -1 ? "absolute" : ""}`}
-              >
-                <FaTwitterSquare className="text-black" size={30} />
-              </div>
-            </div>
             <div
-              className={`absolute top-20 rotate-180 rounded-full transition-all duration-300 ease-in-out ${clickedMembers.indexOf(member.ID) === -1 ? "h-0 w-0" : "h-[500px] w-[500px] bg-sky-400"}`}
-            ></div>
+              className="group relative z-5 flex h-fit w-full grow flex-col items-center overflow-hidden rounded-4xl bg-linear-to-b from-neutral-200/10 to-neutral-900/25 pt-4 backdrop-blur-sm"
+            >
+              <h2
+                className={`unbounded absolute left-0 z-3 text-center text-3xl font-semibold text-sky-400 transition-all duration-500 ease-in-out group-hover:-translate-y-4 md:text-4xl lg:text-5xl ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}
+              >
+                {member.memberRoleName}
+              </h2>
+              <p
+                className={`unbounded absolute top-16 right-0 z-3 text-xl text-white uppercase transition-all duration-500 ease-in-out group-hover:-translate-y-4 ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}
+              >
+                {member.memberRole}
+              </p>
+              <img
+                src={Developer}
+                className={`z-2 mx-auto mt-16 h-100 w-[70%] transition-all duration-500 ease-in-out ${clickedMembers.indexOf(member.ID) === -1 ? "grayscale group-hover:translate-y-4" : ""}`}
+              />
+              <div className="absolute bottom-4 z-3 flex w-full justify-center gap-4">
+                <div
+                  className="bottom-0 z-2 rounded-xl bg-white p-2 cursor-pointer"
+                  onClick={() => handleClickMember(member.ID)}
+                >
+                  <FaPlus className="text-black" size={30} />
+                </div>
+                <div
+                  className={`bottom-0 rounded-xl bg-white p-2 ${clickedMembers.indexOf(member.ID) === -1 ? "absolute" : ""}`}
+                >
+                  <FaLinkedin className="text-black" size={30} />
+                </div>
+                <div
+                  className={`bottom-0 rounded-xl bg-white p-2 ${clickedMembers.indexOf(member.ID) === -1 ? "absolute" : ""}`}
+                >
+                  <FaFacebookSquare className="text-black" size={30} />
+                </div>
+                <div
+                  className={`bottom-0 rounded-xl bg-white p-2 ${clickedMembers.indexOf(member.ID) === -1 ? "absolute" : ""}`}
+                >
+                  <FaTwitterSquare className="text-black" size={30} />
+                </div>
+              </div>
+              <div
+                className={`absolute top-25 lg:top-20 rotate-180 rounded-full transition-all duration-300 ease-in-out ${clickedMembers.indexOf(member.ID) === -1 ? "h-0 w-0" : "h-[500px] w-[500px] bg-sky-400"}`}
+              ></div>
+            </div>
+            <div className="mt-0 min-h-[130px] w-full px-4 py-2 bg-stone-800/75 rounded-3xl text-white">
+              <p
+                className={`unbounded text-center text-lg text-sky-400 mb-2`}
+              >
+                {member.memberName}
+              </p>
+              <p
+                className={`satoshireg text-md font-light text-justify text-white`}
+              >
+                {member.memberSkill}
+              </p>
+            </div>
           </div>
         );
       })}
