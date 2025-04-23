@@ -149,7 +149,7 @@ function Technologies() {
             return (
               <div
                 key={technology.ID}
-                className="mx-4 flex h-24 w-52 items-center justify-around rounded-2xl bg-neutral-800 px-4 text-white"
+                className="mx-4 flex h-24 w-52 items-center justify-around rounded-2xl bg-neutral-800/75 px-4 text-white"
               >
                 <div>{technology.TechnologyIcon}</div>
                 <p className="text-2xl font-normal satoshireg">
@@ -265,8 +265,8 @@ function TeamIntroduction() {
       <section data-aos="fade-up" className="mx-auto w-full max-w-[1300px] px-5 lg:px-4">
         <div className="-mx-2 flex flex-wrap gap-y-1 md:gap-y-0">
           <div className="mb-2 w-full px-1 md:w-1/2">
-            <div className="flex h-full flex-col gap-4 rounded-3xl border border-stone-700 bg-stone-900 p-6 text-white shadow-2xl">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700">
+            <div className="flex h-full flex-col gap-4 rounded-3xl border border-stone-700 bg-linear-to-b from-stone-600/20 to-stone-900/25 p-6 text-white shadow-2xl">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700/50">
                 <TbCircleLetterG
                   size={50}
                   className="text-sky-400 drop-shadow-[0_0_8px_rgba(96,165,250,1)]"
@@ -284,8 +284,8 @@ function TeamIntroduction() {
             </div>
           </div>
           <div className="mb-2 w-full px-1 md:w-1/2">
-            <div className="flex h-full flex-col gap-4 rounded-3xl border border-stone-700 bg-stone-900 p-6 pb-12 text-white shadow-2xl">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700">
+            <div className="flex h-full flex-col gap-4 rounded-3xl border border-stone-700 bg-linear-to-b from-stone-600/20 to-stone-900/25 p-6 pb-12 text-white shadow-2xl">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700/50">
                 <LuSquareMenu
                   size={50}
                   className="text-sky-400 drop-shadow-[0_0_8px_rgba(96,165,250,1)]"
@@ -303,8 +303,8 @@ function TeamIntroduction() {
             </div>
           </div>
           <div className="mb-2 w-full px-1 md:w-1/2">
-            <div className="flex h-full flex-col gap-4 rounded-3xl border border-stone-700 bg-stone-900 p-6 text-white shadow-2xl">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700">
+            <div className="flex h-full flex-col gap-4 rounded-3xl border border-stone-700 bg-linear-to-b from-stone-600/20 to-stone-900/25 p-6 text-white shadow-2xl">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700/50">
                 <FaBullseye
                   size={40}
                   className="text-sky-400 drop-shadow-[0_0_8px_rgba(96,165,250,1)]"
@@ -322,8 +322,8 @@ function TeamIntroduction() {
             </div>
           </div>
           <div className="mb-2 w-full px-1 md:w-1/2">
-            <div className="flex h-full flex-col gap-4 rounded-3xl border border-stone-700 bg-stone-900 p-6 text-white shadow-2xl">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700">
+            <div className="flex h-full flex-col gap-4 rounded-3xl border border-stone-700 bg-linear-to-b from-stone-600/20 to-stone-900/25 p-6 text-white shadow-2xl">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700/50">
                 <FaEye
                   size={40}
                   className="text-sky-400 drop-shadow-[0_0_8px_rgba(96,165,250,1)]"

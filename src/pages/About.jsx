@@ -8,28 +8,28 @@ import Background from "../components/background";
 const accordionData = [
   {
     key: "accordion1",
-    title: "01. Web Developer",
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "01. Frontend Development",
+    content: "Focuses on building the user interface using HTML, CSS, Tailwind CSS, React.js, and ensuring responsive design.",
   },
   {
     key: "accordion2",
-    title: "02. Web Developer",
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "02. Backend Development",
+    content: "Specializes in server-side programming using Java and PHP, manages data with MySQL, and integrates real-time services and authentication using Firebase.",
   },
   {
     key: "accordion3",
-    title: "03. Web Developer",
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "03. UI/UX Design",
+    content: "Creates wireframes, prototypes, and visual designs using tools like Figma or Framer, and ensures a smooth user experience.",
   },
   {
     key: "accordion4",
-    title: "04. Web Developer",
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "04. Quality Assurance",
+    content: "Conducts testing (unit, integration, UI), bug tracking, and deploys the project.",
   },
   {
     key: "accordion5",
-    title: "05. Web Developer",
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "05. Project Management",
+    content: "Oversees task distribution, progress tracking, manages timelines, and writes clear documentation and reports.",
   },
 ];
 
@@ -45,9 +45,9 @@ export default function About() {
           </h1>
         </div>
         <div className="animate-slide-in-bottom flex min-h-fit max-w-full flex-wrap items-center justify-center gap-2 lg:h-96 lg:flex-nowrap lg:px-8">
-          <div className="flex h-full max-w-[710px] flex-col gap-12 rounded-3xl border border-stone-700 bg-stone-900 p-6 shadow-2xl lg:w-1/2">
+          <div className="flex h-full max-w-[710px] flex-col gap-12 rounded-3xl border border-stone-700 bg-linear-to-b from-stone-600/20 to-stone-900/25 p-6 shadow-2xl lg:w-1/2">
             <div className="flex flex-col gap-4">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700/50">
                 <TbCircleLetterG
                   size={50}
                   className="text-sky-400 drop-shadow-[0_0_8px_rgba(96,165,250,1)]"
@@ -62,9 +62,9 @@ export default function About() {
             Our commitment to quality, efficiency, and impactful solutions drives us to push boundaries and turn ideas into reality.
             </p>
           </div>
-          <div className="flex h-full max-w-[710px] flex-col gap-12 rounded-3xl border border-stone-700 bg-stone-900 p-6 pb-12 shadow-2xl lg:w-1/2">
+          <div className="flex h-full max-w-[710px] flex-col gap-12 rounded-3xl border border-stone-700 bg-linear-to-b from-stone-600/20 to-stone-900/25 p-6 pb-12 shadow-2xl lg:w-1/2">
             <div className="flex flex-col gap-4">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700/50">
                 <LuSquareMenu
                   size={50}
                   className="text-sky-400 drop-shadow-[0_0_8px_rgba(96,165,250,1)]"
@@ -75,14 +75,9 @@ export default function About() {
               </h4>
             </div>
             <p className="text-md satoshireg font-normal text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, ullam blanditiis? Laboriosam quas officiis excepturi
-              molestiae et architecto dolore possimus doloribus officia? Magni
-              tenetur reprehenderit, veniam a quasi debitis nostrum! Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Sed, provident facere
-              amet numquam nisi eaque, et cupiditate, excepturi quam voluptatem
-              ipsa voluptatibus. Id totam saepe aliquam! Mollitia illum quo
-              debitis.
+            As Information Technology students, we are committed to continuous learning and innovation in the field of technology. 
+            We strive to develop our skills, adapt to emerging trends, and contribute meaningfully to the digital world. 
+            With dedication and integrity, we aim to grow both as professionals and as responsible members of the tech community.
             </p>
           </div>
         </div>
@@ -148,16 +143,9 @@ function Accordion() {
                     className={`transition-all duration-300 ease-in-out ${selected.indexOf(item.key) !== -1 ? "h-fit p-4" : "h-0 p-0"} text-white`}
                   >
                     <p
-                      className={`${index === accordionData.length - 1 ? "m-auto max-w-6/8 text-justify" : ""} ${selected.indexOf(item.key) === -1 && "hidden"} text-md satoshireg font-normal text-white`}
+                      className={`${index === accordionData.length - 1 ? "m-auto" : ""} ${selected.indexOf(item.key) === -1 && "hidden"} text-md satoshireg font-normal text-white`}
                     >
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Quos, qui culpa obcaecati consectetur blanditiis libero
-                      impedit facere distinctio reiciendis reprehenderit quod
-                      praesentium debitis nihil corporis asperiores suscipit sed
-                      maiores adipisci. Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Laboriosam architecto quia blanditiis
-                      cupiditate voluptates expedita consequatur dolorem!
-                      Voluptatum eligendi quos.
+                      {item.content}
                     </p>
                   </div>
                 </div>

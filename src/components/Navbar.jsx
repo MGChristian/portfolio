@@ -98,7 +98,7 @@ export default function Navbar() {
           <p className="unbounded font-normal text-shadow-black text-shadow-lg">Team <span className="text-sky-400">Synergy</span></p>
         </div>
         <div
-          className="rounded-2xl bg-neutral-900/75 p-4 hover:cursor-pointer"
+          className="rounded-2xl bg-neutral-900/80 p-4 hover:cursor-pointer"
           onClick={handleNav}
         >
           {nav ? (

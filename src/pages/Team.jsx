@@ -11,7 +11,7 @@ const members = [
     ID: "member-1",
     memberName: "Christian Gutierrez",
     memberRole: "Developer",
-    memberRoleName: "Front End",
+    memberRoleName: "Back End",
   },
   {
     ID: "member-2",
