@@ -65,7 +65,7 @@ export default function Values() {
             <div
               key={value.ID}
               onMouseEnter={() => handleCurrentValue(value)}
-              className={`mx-4 flex h-20 w-52 items-center justify-around rounded-2xl bg-neutral-800/75 px-4 ${currentValue !== null && currentValue.ID === value.ID ? "bg-sky-400 text-black" : "text-white"}`}
+              className={`mx-4 flex h-20 w-52 items-center justify-around rounded-2xl bg-neutral-800/50 px-4 ${currentValue !== null && currentValue.ID === value.ID ? "bg-sky-400 text-black" : "text-white"}`}
             >
               <p className="satoshireg text-2xl font-normal">{value.value}</p>
             </div>
