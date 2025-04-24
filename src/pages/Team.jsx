@@ -3,8 +3,8 @@ import { FaFacebookSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
 import Developer from "../assets/develper.png";
 import TeamPicture from "../assets/team.png";
-import Navbar from "../components/Navbar";
 import Background from "../components/background";
+import Navbar from "../components/Navbar";
 import Values from "../components/Values";
 
 const members = [
@@ -121,7 +121,7 @@ function Members() {
         return (
           <div
             key={member.ID}
-            className="flex w-full flex-col items-center gap-4 px-4 lg:max-w-[400px] lg:px-0"
+            className="flex w-full flex-col items-center px-4 lg:max-w-[400px] lg:px-0"
           >
             <div className="group relative z-5 flex h-fit w-full grow flex-col items-center overflow-hidden rounded-4xl bg-linear-to-b from-neutral-200/10 to-neutral-900/25 pt-4 backdrop-blur-sm">
               <h2
@@ -165,7 +165,7 @@ function Members() {
                 className={`absolute top-25 rotate-180 rounded-full transition-all duration-300 ease-in-out lg:top-20 ${clickedMembers.indexOf(member.ID) === -1 ? "h-0 w-0" : "h-[500px] w-[500px] bg-sky-400"}`}
               ></div>
             </div>
-            <div className="mt-0 min-h-[130px] w-full rounded-3xl bg-stone-800/75 px-4 py-2 text-white">
+            <div className="mt-0 min-h-[130px] w-full rounded-3xl bg-stone-700/50 px-4 py-2 text-white">
               <p className={`unbounded mb-2 text-center text-lg text-sky-400`}>
                 {member.memberName}
               </p>
