@@ -267,9 +267,9 @@ function TeamIntroduction() {
       </section>
       <section
         data-aos="fade-up"
-        className="mx-auto w-full max-w-[1300px] px-5 lg:px-4"
+        className="mx-auto w-full max-w-[1300px] px-3"
       >
-        <div className="-mx-2 flex flex-wrap gap-y-1 md:gap-y-0">
+        <div className="flex flex-wrap w-full gap-y-1 md:gap-y-0">
           <div className="mb-2 w-full px-1 md:w-1/2">
             <div className="flex h-full flex-col gap-4 rounded-3xl border border-stone-700 bg-linear-to-b from-stone-600/20 to-stone-900/25 p-6 text-white shadow-2xl">
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700/50">
