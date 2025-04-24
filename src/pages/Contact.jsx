@@ -18,7 +18,7 @@ export default function Contact() {
       <div className="mb-15 w-full max-w-[1300px] mx-auto px-4">
         <section className="mb-16 flex flex-col gap-12 lg:mb-0 lg:min-h-fit">
           <div className="flex-column flex h-64 items-center justify-center lg:h-30">
-            <h1 className="animate-slide-in unbounded text-4xl font-normal text-white text-shadow-black text-shadow-lg md:text-5xl lg:text-5xl">
+            <h1 className="animate-slide-in unbounded text-4xl font-normal text-center text-white text-shadow-black text-shadow-lg md:text-5xl lg:text-5xl">
               Let's Work Together
             </h1>
           </div>
@@ -41,12 +41,12 @@ export default function Contact() {
                 </p>
               </div>
               <div className="rounded-3xl bg-linear-to-b from-stone-800/75 to-stone-800/25 px-5 py-6">
-                <h2 className="mb-5 font-normal text-sky-400">Email:</h2>
-                <p className="cursor-pointer text-xl hover:text-orange-400 hover:underline">
+                <h2 className="text-md mb-5 font-normal text-sky-400">Email:</h2>
+                <p className="cursor-pointer text-lg lg:text-xl hover:text-orange-400 hover:underline">
                   SYNERGY@EMAIL.COM
                 </p>
               </div>
-              <div className="h-[200px] rounded-3xl bg-linear-to-b from-stone-800/75 to-stone-800/25 px-5 py-6 lg:col-span-2">
+              <div className="h-fit lg:h-[200px] rounded-3xl bg-linear-to-b from-stone-800/75 to-stone-800/25 px-5 py-6 lg:col-span-2">
                 <h2 className="mb-5 font-normal text-sky-400">
                   Opening Hours:
                 </h2>
@@ -54,13 +54,13 @@ export default function Contact() {
                 <p className="mb-3 text-xl">SAT: 10:00AM - 6:30PM</p>
                 <p className="text-xl">SUN: CLOSED</p>
               </div>
-              <div className="h-[200px] rounded-3xl bg-linear-to-b from-stone-800/75 to-stone-800/25 px-5 py-6 md:col-span-1 lg:col-span-1">
+              <div className="h-fit lg:h-[200px] rounded-3xl bg-linear-to-b from-stone-800/75 to-stone-800/25 px-5 py-6 md:col-span-1 lg:col-span-1">
                 <h2 className="mb-5 font-normal text-sky-400">Follow Us:</h2>
-                <div className="flex gap-4">
+                <div className="flex items-center justify-center lg:items-start lg:justify-start gap-4">
                   <div className="flex h-[40px] w-[40px] items-center justify-center rounded-2xl border border-stone-600 p-2 transition duration-300 hover:bg-white">
                     <FaFacebookF className="text-sky-400 hover:text-black" />
                   </div>
-                  <div className="duration-300h-[40px] flex w-[40px] items-center justify-center rounded-2xl border border-stone-600 p-2 transition hover:bg-white">
+                  <div className="duration-300 h-[40px] flex w-[40px] items-center justify-center rounded-2xl border border-stone-600 p-2 transition hover:bg-white">
                     <FaTwitter className="text-sky-400 hover:text-black" />
                   </div>
                   <div className="flex h-[40px] w-[40px] items-center justify-center rounded-2xl border border-stone-600 p-2 transition duration-300 hover:bg-white">

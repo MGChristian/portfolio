@@ -111,8 +111,8 @@ export default function Navbar() {
       <div
         className={
           nav
-            ? "fixed top-20 z-10 flex min-h-screen w-full flex-col items-center gap-4 border-b border-neutral-900 bg-black p-4 pt-8 duration-300 ease-in-out lg:hidden"
-            : "fixed -top-full z-10 flex min-h-screen w-full flex-col items-center gap-4 border-b border-neutral-900 bg-black p-4 pt-8 duration-300 ease-in-out lg:hidden"
+            ? "fixed top-20 z-10 flex min-h-screen w-full flex-col items-center justify-center gap-4 border-b border-neutral-900 bg-black p-4 pt-8 duration-300 ease-in-out lg:hidden"
+            : "fixed -top-full z-10 flex min-h-screen w-full flex-col items-center justify-center gap-4 border-b border-neutral-900 bg-black p-4 pt-8 duration-300 ease-in-out lg:hidden"
         }
       >
         {navValues.map((item, index) => {
@@ -125,7 +125,7 @@ export default function Navbar() {
                 onClick={() => setNav(false)}
               >
                 <p
-                  className={`text-md ${currentPage == item.src && "text-sky-400"}`}
+                  className={`text-md ${currentPage == item.src && "text-sky-400 bg-stone-800"}`}
                 >
                   {item.name}
                 </p>
@@ -134,7 +134,7 @@ export default function Navbar() {
           );
         })}
         <Link
-          className={`unbounded my-4 w-full rounded-full border border-neutral-700 p-4 text-center text-white transition-colors duration-300 ease-in-out hover:bg-orange-400 hover:text-black`}
+          className={`unbounded my-4 w-full rounded-full border bg-orange-400 bg-orange-400 p-4 text-center text-black transition-colors duration-300 ease-in-out hover:bg-orange-400 hover:text-black`}
           to="/contact"
           onClick={() => setNav(false)}
         >
