@@ -111,7 +111,7 @@ export default function Navbar() {
       <div
         className={
           nav
-            ? "fixed top-20 z-10 flex min-h-screen w-full flex-col items-center justify-center gap-4 border-b border-neutral-900 bg-black p-4 pt-8 duration-300 ease-in-out lg:hidden"
+            ? "fixed top-10 z-10 flex min-h-screen w-full flex-col items-center justify-center gap-4 border-b border-neutral-900 bg-black p-4 pt-8 duration-300 ease-in-out lg:hidden"
             : "fixed -top-full z-10 flex min-h-screen w-full flex-col items-center justify-center gap-4 border-b border-neutral-900 bg-black p-4 pt-8 duration-300 ease-in-out lg:hidden"
         }
       >
