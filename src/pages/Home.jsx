@@ -79,7 +79,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col gap-8 min-w-screen">
+      <div className="flex flex-col gap-8">
         <Background />
         <HeroSection />
         <TeamIntroduction />
@@ -170,21 +170,21 @@ function Technologies() {
         >
           <div className="absolute z-5 flex flex-wrap pt-4 text-white">
             <div className="mx-auto flex items-center">
-              <div className="animate-bubble-animation-reverse-slow flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20">
+              <div className="animate-bubble-animation-reverse-slow flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20 overflow-hidden">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl">15+</h2>
                 <p>Years of Experience</p>
               </div>
-              <div className="animate-bubble-animation-slow flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20">
+              <div className="animate-bubble-animation-slow flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20 overflow-hidden">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl">15+</h2>
                 <p>Years of Experience</p>
               </div>
             </div>
             <div className="mx-auto flex items-center">
-              <div className="animate-bubble-animation-reverse flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20">
+              <div className="animate-bubble-animation-reverse flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20 overflow-hidden">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl">15+</h2>
                 <p>Years of Experience</p>
               </div>
-              <div className="animate-bubble-animation flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20">
+              <div className="animate-bubble-animation flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20 overflow-hidden">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl">15+</h2>
                 <p>Years of Experience</p>
               </div>
@@ -194,7 +194,7 @@ function Technologies() {
           <div className="absolute z-2 h-full w-full bg-sky-400/50 brightness-70"></div>
           <img
             src={Client}
-            className="b h-full w-full object-cover object-center contrast-150"
+            className="b h-full w-full object-cover object-center contrast-150 overflow-hidden"
           />
           <div className="absolute bottom-8 z-5 flex w-full max-w-[1300px] flex-wrap justify-center gap-4 px-8 text-center md:flex-nowrap lg:justify-between">
             <div className="flex h-60 w-96 max-w-full flex-col items-center justify-around rounded-2xl border py-4 backdrop-blur-2xl max-md:grow">
