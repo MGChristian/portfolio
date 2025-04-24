@@ -102,3 +102,77 @@ export default function Values() {
     </>
   );
 }
+
+// import Matter from "matter-js";
+// import { useEffect } from "react";
+
+// export default function Values() {
+//   useEffect(() => {
+//     //Module aliases
+//     const Engine = Matter.Engine,
+//       World = Matter.World,
+//       Render = Matter.Render,
+//       Runner = Matter.Runner,
+//       Bodies = Matter.Bodies,
+//       Composite = Matter.Composite;
+
+//     //Create Engine
+//     const engine = Engine.create();
+
+//     // create a renderer
+//     const render = Render.create({
+//       element: document.getElementById("hello"),
+//       engine: engine,
+//       options: {
+//         width: 440,
+//         height: 440,
+//         wireframeBackground: "transparent",
+//         showAngleIndicator: true,
+//       },
+//     });
+
+//     // create two boxes and a ground
+//     const circle = Bodies.circle(200, 0, 50);
+//     const circle2 = Bodies.circle(200, 0, 50);
+//     const circle3 = Bodies.circle(200, 0, 50);
+//     const circle4 = Bodies.circle(200, 0, 50);
+//     const circle5 = Bodies.circle(200, 0, 50);
+//     const left = Bodies.rectangle(-50, 220, 100, 440, { isStatic: true });
+//     const circleBG = Bodies.circle(25, 405, 50, { isStatic: true });
+//     const circleBG2 = Bodies.circle(415, 405, 50, { isStatic: true });
+//     const right = Bodies.rectangle(490, 220, 100, 440, { isStatic: true });
+//     const ground = Bodies.rectangle(220, 470, 440, 60, { isStatic: true });
+
+//     // add all of the bodies to the world
+//     Composite.add(engine.world, [
+//       circle,
+//       circle2,
+//       circle3,
+//       circle4,
+//       circle5,
+//       circleBG,
+//       circleBG2,
+//       ground,
+//       left,
+//       right,
+//     ]);
+
+//     // run the renderer
+//     Render.run(render);
+
+//     // create runner
+//     const runner = Runner.create();
+
+//     // run the engine
+//     Runner.run(runner, engine);
+//   }, []);
+
+//   return (
+//     <>
+//       <div
+//         id="hello"
+//         className="md:80 absolute h-95 w-95 translate-y-63 overflow-hidden rounded-full border border-stone-500 backdrop-blur-sm md:h-80 md:w-80 lg:h-110 lg:w-110 lg:translate-y-8"
+//       ></div>
+//     </>
+//   );
+// }
