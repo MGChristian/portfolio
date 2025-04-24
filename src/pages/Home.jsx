@@ -79,7 +79,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col gap-8 max-w-screen">
+      <div className="flex flex-col gap-8 min-w-screen">
         <Background />
         <HeroSection />
         <TeamIntroduction />
