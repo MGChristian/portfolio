@@ -165,7 +165,7 @@ function Technologies() {
       </section>
       <section>
         <div
-          className="relative mb-[50px] flex h-[800px] w-full flex-col items-center max-md:h-[200vh] max-md:max-h-[1300px]"
+          className="relative mb-[50px] flex h-[800px] w-full flex-col items-center max-md:h-[200vh] max-md:max-h-[1300px] overflow-hidden"
           data-aos="fade-up"
         >
           <div className="absolute z-5 flex flex-wrap pt-4 text-white">
