@@ -5,6 +5,7 @@ import Developer from "../assets/develper.png";
 import TeamPicture from "../assets/team.png";
 import Navbar from "../components/Navbar";
 import Background from "../components/background";
+import Values from "../components/Values";
 
 const members = [
   {
@@ -12,35 +13,40 @@ const members = [
     memberName: "Christian Gutierrez",
     memberRole: "Developer",
     memberRoleName: "Back End",
-    memberSkill: "Specializes in server-side programming using Java and PHP, manages data with MySQL."
+    memberSkill:
+      "Specializes in server-side programming using Java and PHP, manages data with MySQL.",
   },
   {
     ID: "member-2",
     memberName: "Jericho Vincent Cuevas",
     memberRole: "Developer",
     memberRoleName: "Front End",
-    memberSkill: "Focuses on building the user interface and ensuring responsive design."
+    memberSkill:
+      "Focuses on building the user interface and ensuring responsive design.",
   },
   {
     ID: "member-3",
     memberName: "Luis Angelo Asuncion",
     memberRole: "Manager",
     memberRoleName: "Project",
-    memberSkill: "Oversees task distribution, progress tracking and manages timelines."
+    memberSkill:
+      "Oversees task distribution, progress tracking and manages timelines.",
   },
   {
     ID: "member-4",
     memberName: "Nica Ilang-Ilang",
     memberRole: "Design",
     memberRoleName: "UI/UX",
-    memberSkill: "Creates wireframes, prototypes, and visual designs using tools like Figma or Framer, and ensures a smooth user experience."
+    memberSkill:
+      "Creates wireframes, prototypes, and visual designs using tools like Figma or Framer, and ensures a smooth user experience.",
   },
   {
     ID: "member-5",
     memberName: "Jeremy Reyes",
     memberRole: "Assurance",
     memberRoleName: "Quality",
-    memberSkill: "Conducts testing (unit, integration, UI), bug tracking, and deploys the project."
+    memberSkill:
+      "Conducts testing (unit, integration, UI), bug tracking, and deploys the project.",
   },
 ];
 
@@ -50,7 +56,7 @@ export default function Team() {
       <Navbar />
       <Background />
       <section className="mb-16 flex flex-col gap-12 lg:mb-0 lg:h-[calc(100vh-80px)] lg:max-h-[900px]">
-        <div className="h-full w-full max-w-[1300px] mx-auto px-4 lg:p-4">
+        <div className="mx-auto h-full w-full max-w-[1300px] px-4 lg:p-4">
           <div className="animate-slide-in-bottom relative flex h-full flex-col items-center gap-12 rounded-3xl shadow-2xl">
             <img
               src={TeamPicture}
@@ -67,16 +73,13 @@ export default function Team() {
       </section>
       <section
         data-aos="fade-up"
-        className="relative flex h-fit w-full max-w-[1300px] mx-auto px-4 items-center justify-center lg:h-[100vh] lg:max-h-[1920px]"
+        className="relative mx-auto flex w-full flex-col justify-around px-4 text-center max-md:min-h-96 max-md:justify-between lg:h-[100vh] lg:max-h-[900px]"
       >
-        <h1 className="unbounded mt-10 text-[18vw] leading-none font-normal text-white lg:text-[20vw]">
-          VALUES
-        </h1>
-        <div className="md:80 absolute h-95 w-95 translate-y-63 rounded-full border border-stone-500 backdrop-blur-sm md:h-80 md:w-80 lg:h-110 lg:w-110 lg:translate-y-8"></div>
+        <Values />
       </section>
       <section
         data-aos="fade-up"
-        className="mx-auto mt-130 mb-24 flex w-full max-w-[1300px] px-4 flex-col items-center justify-center gap-4 lg:mt-20"
+        className="mx-auto mt-16 mb-24 flex w-full max-w-[1300px] flex-col items-center justify-center gap-4 px-4"
       >
         <hr className="h-6 w-36 rounded-2xl border-12 text-sky-400" />
         <h3 className="unbounded flex flex-row text-center text-3xl font-normal text-white md:text-3xl lg:text-5xl">
@@ -112,17 +115,15 @@ function Members() {
   return (
     <section
       data-aos="fade-up"
-      className="mx-auto mb-48 flex w-full flex-wrap items-center justify-center gap-3"
+      className="mx-auto mb-48 flex w-full max-w-[1300px] flex-wrap items-center justify-center gap-3"
     >
       {members.map((member) => {
         return (
           <div
             key={member.ID}
-            className="flex flex-col items-center w-full lg:max-w-[400px] px-4 lg:px-0"
+            className="flex w-full flex-col items-center gap-4 px-4 lg:max-w-[400px] lg:px-0"
           >
-            <div
-              className="group relative z-5 flex h-fit w-full grow flex-col items-center overflow-hidden rounded-4xl bg-linear-to-b from-neutral-200/10 to-neutral-900/25 pt-4 backdrop-blur-sm"
-            >
+            <div className="group relative z-5 flex h-fit w-full grow flex-col items-center overflow-hidden rounded-4xl bg-linear-to-b from-neutral-200/10 to-neutral-900/25 pt-4 backdrop-blur-sm">
               <h2
                 className={`unbounded absolute left-0 z-3 text-center text-3xl font-semibold text-sky-400 transition-all duration-500 ease-in-out group-hover:-translate-y-4 md:text-4xl lg:text-5xl ${clickedMembers.indexOf(member.ID) === -1 ? "" : "-translate-y-4"}`}
               >
@@ -139,7 +140,7 @@ function Members() {
               />
               <div className="absolute bottom-4 z-3 flex w-full justify-center gap-4">
                 <div
-                  className="bottom-0 z-2 rounded-xl bg-white p-2 cursor-pointer"
+                  className="bottom-0 z-2 cursor-pointer rounded-xl bg-white p-2"
                   onClick={() => handleClickMember(member.ID)}
                 >
                   <FaPlus className="text-black" size={30} />
@@ -161,17 +162,15 @@ function Members() {
                 </div>
               </div>
               <div
-                className={`absolute top-25 lg:top-20 rotate-180 rounded-full transition-all duration-300 ease-in-out ${clickedMembers.indexOf(member.ID) === -1 ? "h-0 w-0" : "h-[500px] w-[500px] bg-sky-400"}`}
+                className={`absolute top-25 rotate-180 rounded-full transition-all duration-300 ease-in-out lg:top-20 ${clickedMembers.indexOf(member.ID) === -1 ? "h-0 w-0" : "h-[500px] w-[500px] bg-sky-400"}`}
               ></div>
             </div>
-            <div className="mt-0 min-h-[130px] w-full px-4 py-2 bg-stone-800/75 rounded-3xl text-white">
-              <p
-                className={`unbounded text-center text-lg text-sky-400 mb-2`}
-              >
+            <div className="mt-0 min-h-[130px] w-full rounded-3xl bg-stone-800/75 px-4 py-2 text-white">
+              <p className={`unbounded mb-2 text-center text-lg text-sky-400`}>
                 {member.memberName}
               </p>
               <p
-                className={`satoshireg text-md font-light text-justify text-white`}
+                className={`satoshireg text-md text-justify font-light text-white`}
               >
                 {member.memberSkill}
               </p>

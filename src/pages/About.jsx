@@ -9,27 +9,32 @@ const accordionData = [
   {
     key: "accordion1",
     title: "01. Frontend Development",
-    content: "Focuses on building the user interface using HTML, CSS, Tailwind CSS, React.js, and ensuring responsive design.",
+    content:
+      "Focuses on building the user interface using HTML, CSS, Tailwind CSS, React.js, and ensuring responsive design.",
   },
   {
     key: "accordion2",
     title: "02. Backend Development",
-    content: "Specializes in server-side programming using Java and PHP, manages data with MySQL, and integrates real-time services and authentication using Firebase.",
+    content:
+      "Specializes in server-side programming using Java and PHP, manages data with MySQL, and integrates real-time services and authentication using Firebase.",
   },
   {
     key: "accordion3",
     title: "03. UI/UX Design",
-    content: "Creates wireframes, prototypes, and visual designs using tools like Figma or Framer, and ensures a smooth user experience.",
+    content:
+      "Creates wireframes, prototypes, and visual designs using tools like Figma or Framer, and ensures a smooth user experience.",
   },
   {
     key: "accordion4",
     title: "04. Quality Assurance",
-    content: "Conducts testing (unit, integration, UI), bug tracking, and deploys the project.",
+    content:
+      "Conducts testing (unit, integration, UI), bug tracking, and deploys the project.",
   },
   {
     key: "accordion5",
     title: "05. Project Management",
-    content: "Oversees task distribution, progress tracking, manages timelines, and writes clear documentation and reports.",
+    content:
+      "Oversees task distribution, progress tracking, manages timelines, and writes clear documentation and reports.",
   },
 ];
 
@@ -58,8 +63,10 @@ export default function About() {
               </h4>
             </div>
             <p className="text-md satoshireg font-normal text-white">
-            We believe in the power of teamwork, innovation, and continuous learning.
-            Our commitment to quality, efficiency, and impactful solutions drives us to push boundaries and turn ideas into reality.
+              We believe in the power of teamwork, innovation, and continuous
+              learning. Our commitment to quality, efficiency, and impactful
+              solutions drives us to push boundaries and turn ideas into
+              reality.
             </p>
           </div>
           <div className="flex h-full max-w-[710px] flex-col gap-12 rounded-3xl border border-stone-700 bg-linear-to-b from-stone-600/20 to-stone-900/25 p-6 pb-12 shadow-2xl lg:w-1/2">
@@ -75,9 +82,12 @@ export default function About() {
               </h4>
             </div>
             <p className="text-md satoshireg font-normal text-white">
-            As Information Technology students, we are committed to continuous learning and innovation in the field of technology. 
-            We strive to develop our skills, adapt to emerging trends, and contribute meaningfully to the digital world. 
-            With dedication and integrity, we aim to grow both as professionals and as responsible members of the tech community.
+              As Information Technology students, we are committed to continuous
+              learning and innovation in the field of technology. We strive to
+              develop our skills, adapt to emerging trends, and contribute
+              meaningfully to the digital world. With dedication and integrity,
+              we aim to grow both as professionals and as responsible members of
+              the tech community.
             </p>
           </div>
         </div>

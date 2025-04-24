@@ -93,7 +93,7 @@ export default function Home() {
 
 function HeroSection() {
   return (
-    <section className="relative flex h-[calc(90vh-80px)] max-h-[900px] min-h-[780px] flex-col items-center gap-12 bg-linear-to-b from-transparent from-40% to-sky-400 px-1 lg:mb-0 lg:h-[calc(100vh-80px)]">
+    <section className="relative flex max-h-fit min-h-fit flex-col items-center justify-between gap-8 bg-linear-to-b from-transparent from-40% to-sky-400 px-1 lg:mb-0">
       <div className="mt-10 flex h-fit flex-col items-center justify-center gap-4">
         <p1 className="animate-slide-in satoshireg mb-3 text-lg text-white">
           CREATIVE MINDS, SMART SOLUTIONS
@@ -117,14 +117,14 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-32 w-full overflow-hidden text-9xl font-semibold text-white/80 unbounded">
+      <div className="unbounded absolute bottom-32 w-full overflow-hidden text-9xl font-semibold text-white/80">
         <Marquee className="overflow-hidden" speed={200}>
           <p className="mx-8">Best Team Developer</p>
           <p className="mx-8">Best Team Developer</p>
           <p className="mx-8">Best Team Developer</p>
         </Marquee>
       </div>
-      <div className="absolute bottom-0 z-2 h-3/7 md:h-4/7">
+      <div className="z-2 min-h-64">
         <img src={Group} className="h-full" />
       </div>
     </section>
@@ -136,7 +136,7 @@ function Technologies() {
     <>
       <section
         data-aos="fade-up"
-        className="mx-auto flex w-full max-w-[1300px] flex-col gap-4 px-4 max-md:text-center mt-[50px]"
+        className="mx-auto mt-[50px] flex w-full max-w-[1300px] flex-col gap-4 px-4 max-md:text-center"
       >
         <div className="animate-slide-in-bottom flex flex-col items-center justify-center gap-4">
           <hr className="h-6 w-36 rounded-2xl border-12 text-sky-400" />
@@ -144,7 +144,10 @@ function Technologies() {
             Technologies.
           </h3>
         </div>
-        <Marquee speed={200} className="rounded-2xl border border-neutral-800 mt-[20px] mb-[50px]">
+        <Marquee
+          speed={200}
+          className="mt-[20px] mb-[50px] rounded-2xl border border-neutral-800"
+        >
           {technologiesList.map((technology, index) => {
             return (
               <div
@@ -152,7 +155,7 @@ function Technologies() {
                 className="mx-4 flex h-24 w-52 items-center justify-around rounded-2xl bg-neutral-800/75 px-4 text-white"
               >
                 <div>{technology.TechnologyIcon}</div>
-                <p className="text-2xl font-normal satoshireg">
+                <p className="satoshireg text-2xl font-normal">
                   {technology.TechnologyName}
                 </p>
               </div>
@@ -162,7 +165,7 @@ function Technologies() {
       </section>
       <section>
         <div
-          className="relative flex h-[800px] w-full flex-col items-center max-md:h-[200vh] max-md:max-h-[1300px] mb-[50px]"
+          className="relative mb-[50px] flex h-[800px] w-full flex-col items-center max-md:h-[200vh] max-md:max-h-[1300px]"
           data-aos="fade-up"
         >
           <div className="absolute z-5 flex flex-wrap pt-4 text-white">
@@ -248,7 +251,7 @@ function TeamIntroduction() {
     <>
       <section
         data-aos="fade-up"
-        className="mx-auto flex w-full max-w-[1300px] flex-col px-4 max-md:text-center mt-[80px]"
+        className="mx-auto mt-[80px] flex w-full max-w-[1300px] flex-col px-4 max-md:text-center"
       >
         <div className="animate-slide-in-bottom flex flex-col items-center gap-4 lg:flex-row">
           <hr className="h-6 w-36 rounded-2xl border-12 text-sky-400" />
@@ -256,13 +259,16 @@ function TeamIntroduction() {
             The Minds Behind the Work.
           </h3>
         </div>
-        <div className="animate-slide-in-bottom ml-0 flex flex-col items-center gap-4 lg:ml-[165px] lg:flex-row mb-[20px]">
+        <div className="animate-slide-in-bottom mb-[20px] ml-0 flex flex-col items-center gap-4 lg:ml-[165px] lg:flex-row">
           <p className="text-md md:text-md lg:text-md satoshireg font-thin text-gray-100">
             WHO WE ARE, WHAT WE DO AND OUR PURPOSE
           </p>
         </div>
       </section>
-      <section data-aos="fade-up" className="mx-auto w-full max-w-[1300px] px-5 lg:px-4">
+      <section
+        data-aos="fade-up"
+        className="mx-auto w-full max-w-[1300px] px-5 lg:px-4"
+      >
         <div className="-mx-2 flex flex-wrap gap-y-1 md:gap-y-0">
           <div className="mb-2 w-full px-1 md:w-1/2">
             <div className="flex h-full flex-col gap-4 rounded-3xl border border-stone-700 bg-linear-to-b from-stone-600/20 to-stone-900/25 p-6 text-white shadow-2xl">
