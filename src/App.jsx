@@ -16,7 +16,7 @@ function App() {
       easing: "ease-in-out",
       once: false,
       offset: 50,
-      delay: 500,
+      delay: 100,
     });
   }, []);
   return (
