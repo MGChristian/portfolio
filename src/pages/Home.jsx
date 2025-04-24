@@ -163,13 +163,13 @@ function Technologies() {
           })}
         </Marquee>
       </section>
-      <section>
+      <section className="overflow-hidden">
         <div
           className="relative mb-[50px] flex h-[800px] w-full flex-col items-center max-md:h-[200vh] max-md:max-h-[1300px] overflow-hidden"
           data-aos="fade-up"
         >
-          <div className="absolute z-5 flex flex-wrap pt-4 text-white">
-            <div className="mx-auto flex items-center">
+          <div className="absolute z-5 flex flex-wrap pt-4 text-white overflow-hidden">
+            <div className="mx-auto flex items-center overflow-hidden">
               <div className="animate-bubble-animation-reverse-slow flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20 overflow-hidden">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl">15+</h2>
                 <p>Years of Experience</p>
