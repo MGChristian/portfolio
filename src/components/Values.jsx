@@ -74,8 +74,8 @@ export default function Values() {
           })}
         </Marquee>
 
-        <div className="flex min-h-[250px] lg:min-h-[300px] items-center justify-center">
-          <h1 className="unbounded text-[7vw] leading-none font-normal text-white">
+        <div className="flex min-h-[250px] items-center justify-center lg:min-h-[300px]">
+          <h1 className="unbounded text-[7vw] leading-none font-normal text-white select-none">
             {currentValue !== null && currentValue.value
               ? currentValue.value
               : "VALUES"}
