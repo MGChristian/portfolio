@@ -1,7 +1,7 @@
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Background from "../components/background";
 import projectsData from "../data/projectsData";
-import { Link } from "react-router-dom";
 
 export default function Projects() {
   return (
@@ -31,7 +31,7 @@ export default function Projects() {
                             <span className="text-sky-400">
                               {language.languageIcon}
                             </span>
-                            <p className="text-xs font-bold text-white">
+                            <p className="text-xs font-normal text-white satoshireg">
                               {language.languageName}
                             </p>
                           </div>
@@ -40,10 +40,10 @@ export default function Projects() {
                     })}
                   </div>
                 </div>
-                <div className="rounded-2xl bg-neutral-800 p-4">
+                <div className="rounded-2xl bg-neutral-800/75 p-4">
                   <p className="text-justify text-white">
-                    <span className="font-bold">{project.projectName}: </span>
-                    <span>{project.projectDescription}</span>
+                    <span className="font-semibold satoshireg">{project.projectName}: </span>
+                    <span className="font-normal satoshireg">{project.projectDescription}</span>
                   </p>
                 </div>
               </div>

@@ -4,10 +4,10 @@ import {
   Instagram,
   Mail,
   MapPin,
-  Phone,
-  Twitter
+  Phone
 } from "lucide-react";
 import { useState } from "react";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   const [formData, setFormData] = useState({ email: ""});
@@ -91,9 +91,9 @@ export default function Footer() {
             <div className="flex justify-center gap-4">
               {[
                 { icon: Github, link: "https://github.com/MGChristian/portfolio" },
-                { icon: Facebook, link: "https://facebook.com/yourprofile" },
-                { icon: Instagram, link: "https://instagram.com/yourprofile" },
-                { icon: Twitter, link: "https://twitter.com/yourprofile" },
+                { icon: Facebook, link: "https://www.facebook.com/Christian.Gutierrez.1211" },
+                { icon: Instagram, link: "https://www.instagram.com/gutierrezchristianm?igsh=MWk5cWt5cWJ2NnFpeA==" },
+                { icon: FaXTwitter, link: "https://x.com/VincentCuevas09" },
               ].map(({ icon: Icon, link }, i) => (
                 <a
                   key={i}

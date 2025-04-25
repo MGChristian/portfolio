@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { FaFacebookSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
-import { FaPlus } from "react-icons/fa6";
+import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
+import { FaGithub, FaPlus } from "react-icons/fa6";
 
 import TeamPicture from "../assets/team.png";
 import Background from "../components/background";
@@ -101,22 +101,40 @@ function Members() {
                   className="bottom-0 z-2 cursor-pointer rounded-xl bg-white p-2"
                   onClick={() => handleClickMember(member.ID)}
                 >
-                  <FaPlus className="text-black" size={30} />
+                  <FaPlus className="text-black hover:text-sky-800" size={30} />
                 </div>
                 <div
                   className={`bottom-0 rounded-xl bg-white p-2 ${clickedMembers.indexOf(member.ID) === -1 ? "absolute" : ""}`}
                 >
-                  <FaLinkedin className="text-black" size={30} />
+                  <a
+                    href={member.linkGithub}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub className="text-black hover:text-sky-800" size={30} />
+                  </a>
                 </div>
                 <div
                   className={`bottom-0 rounded-xl bg-white p-2 ${clickedMembers.indexOf(member.ID) === -1 ? "absolute" : ""}`}
                 >
-                  <FaFacebookSquare className="text-black" size={30} />
+                  <a
+                    href={member.linkFacebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaFacebookSquare className="text-black hover:text-sky-800" size={30} />
+                  </a>
                 </div>
                 <div
                   className={`bottom-0 rounded-xl bg-white p-2 ${clickedMembers.indexOf(member.ID) === -1 ? "absolute" : ""}`}
                 >
-                  <FaTwitterSquare className="text-black" size={30} />
+                  <a
+                    href={member.linkInstagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaInstagramSquare className="text-black hover:text-sky-800" size={30} />
+                  </a>
                 </div>
               </div>
               <div

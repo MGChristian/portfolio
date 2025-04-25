@@ -3,8 +3,8 @@ import {
   FaFacebookF,
   FaGithub,
   FaInstagram,
-  FaTwitter
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import Footer from "../components/Footer";
 import Form from "../components/Form";
 import Navbar from "../components/Navbar";
@@ -66,7 +66,7 @@ export default function Contact() {
                     <FaGithub className="text-sky-400 hover:text-black" />
                   </a>
                   <a
-                    href="https://facebook.com/yourprofile"
+                    href="https://www.facebook.com/Christian.Gutierrez.1211"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex h-[40px] w-[40px] items-center justify-center rounded-2xl border border-stone-600 p-2 transition duration-300 hover:bg-white"
@@ -74,7 +74,7 @@ export default function Contact() {
                     <FaFacebookF className="text-sky-400 hover:text-black" />
                   </a>
                   <a
-                    href="https://instagram.com/yourprofile"
+                    href="https://www.instagram.com/gutierrezchristianm?igsh=MWk5cWt5cWJ2NnFpeA=="
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex h-[40px] w-[40px] items-center justify-center rounded-2xl border border-stone-600 p-2 transition duration-300 hover:bg-white"
@@ -82,12 +82,12 @@ export default function Contact() {
                     <FaInstagram className="text-sky-400 hover:text-black" />
                   </a>
                   <a
-                    href="https://twitter.com/yourprofile"
+                    href="https://x.com/VincentCuevas09"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex h-[40px] w-[40px] items-center justify-center rounded-2xl border border-stone-600 p-2 transition duration-300 hover:bg-white"
                   >
-                    <FaTwitter className="text-sky-400 hover:text-black" />
+                    <FaXTwitter className="text-sky-400 hover:text-black" />
                   </a>
                 </div>
               </div>
