@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { FaFacebookSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
+import Jeremy from "..//assets/Jeremy.png";
 import Asuncion from "../assets/Asuncion.png";
 import Christian from "../assets/Christian.png";
 import Cuevas from "../assets/Cuevas.png";
+import Nica from "../assets/Nica.png";
 import TeamPicture from "../assets/team.png";
 import Background from "../components/background";
 import Navbar from "../components/Navbar";
@@ -44,6 +46,7 @@ const members = [
     memberRoleName: "UI/UX",
     memberSkill:
       "Creates wireframes, prototypes, and visual designs using tools like Figma or Framer, and ensures a smooth user experience.",
+    memberPic: Nica,
   },
   {
     ID: "member-5",
@@ -52,6 +55,7 @@ const members = [
     memberRoleName: "Quality",
     memberSkill:
       "Conducts testing (unit, integration, UI), bug tracking, and deploys the project.",
+    memberPic: Jeremy,
   },
 ];
 
