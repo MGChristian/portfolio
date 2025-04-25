@@ -13,19 +13,7 @@ export default function Projects() {
           Check Our Works
         </h1>
       </section>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      <section className="mx-auto mb-48 flex w-full max-w-[1300px] flex-wrap justify-center gap-4 px-4 overflow-hidden">
-=======
       <section className="mx-auto mb-48 flex w-full max-w-[1300px] flex-wrap justify-center gap-4">
->>>>>>> Stashed changes
-=======
-      <section className="mx-auto mb-48 flex w-full max-w-[1300px] flex-wrap justify-center gap-4">
->>>>>>> Stashed changes
-=======
-      <section className="mx-auto mb-48 flex w-full max-w-[1300px] flex-wrap justify-center gap-4">
->>>>>>> Stashed changes
         {projectsData.map((project, index) => {
           return (
             <Link to={`/projects/${project.projectID}`}>
@@ -46,7 +34,7 @@ export default function Projects() {
                             <span className="text-sky-400">
                               {language.languageIcon}
                             </span>
-                            <p className="text-xs font-normal text-white satoshireg">
+                            <p className="satoshireg text-xs font-normal text-white">
                               {language.languageName}
                             </p>
                           </div>
@@ -57,8 +45,12 @@ export default function Projects() {
                 </div>
                 <div className="rounded-2xl bg-neutral-800/75 p-4">
                   <p className="text-justify text-white">
-                    <span className="font-semibold satoshireg">{project.projectName}: </span>
-                    <span className="font-normal satoshireg">{project.projectDescription}</span>
+                    <span className="satoshireg font-semibold">
+                      {project.projectName}:{" "}
+                    </span>
+                    <span className="satoshireg font-normal">
+                      {project.projectDescription}
+                    </span>
                   </p>
                 </div>
               </div>
