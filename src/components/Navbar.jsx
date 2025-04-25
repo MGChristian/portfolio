@@ -29,7 +29,7 @@ const navValues = [
 ];
 
 export default function Navbar() {
-  const [currentPage, setCurrentPage] = useState(window.location.pathname);
+  const [currentPage, setCurrentPage] = useState(window.location.hash.replace("#", ""));
   const [contactHover, setContactHover] = useState(false);
   const [nav, setNav] = useState(false);
 
@@ -42,7 +42,7 @@ export default function Navbar() {
   }
 
   useEffect(() => {
-    setCurrentPage(window.location.pathname);
+    setCurrentPage(window.location.hash.replace("#", ""));
     console.log(currentPage);
   }, []);
 
@@ -125,7 +125,7 @@ export default function Navbar() {
                 onClick={() => setNav(false)}
               >
                 <p
-                  className={`text-md ${currentPage == item.src && "text-sky-400 bg-stone-800"}`}
+                  className={`text-md ${currentPage == item.src && "text-sky-400"}`}
                 >
                   {item.name}
                 </p>
