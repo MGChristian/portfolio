@@ -1,9 +1,9 @@
 import React from "react";
 import {
   FaFacebookF,
+  FaGithub,
   FaInstagram,
-  FaLinkedinIn,
-  FaTwitter,
+  FaTwitter
 } from "react-icons/fa";
 import Footer from "../components/Footer";
 import Form from "../components/Form";
@@ -57,18 +57,38 @@ export default function Contact() {
               <div className="h-fit lg:h-[200px] rounded-3xl bg-linear-to-b from-stone-800/75 to-stone-800/25 px-5 py-6 md:col-span-1 lg:col-span-1">
                 <h2 className="mb-5 font-normal text-sky-400">Follow Us:</h2>
                 <div className="flex items-center justify-center lg:items-start lg:justify-start gap-4">
-                  <div className="flex h-[40px] w-[40px] items-center justify-center rounded-2xl border border-stone-600 p-2 transition duration-300 hover:bg-white">
+                  <a
+                    href="https://github.com/MGChristian/portfolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex h-[40px] w-[40px] items-center justify-center rounded-2xl border border-stone-600 p-2 transition duration-300 hover:bg-white"
+                  >
+                    <FaGithub className="text-sky-400 hover:text-black" />
+                  </a>
+                  <a
+                    href="https://facebook.com/yourprofile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex h-[40px] w-[40px] items-center justify-center rounded-2xl border border-stone-600 p-2 transition duration-300 hover:bg-white"
+                  >
                     <FaFacebookF className="text-sky-400 hover:text-black" />
-                  </div>
-                  <div className="duration-300 h-[40px] flex w-[40px] items-center justify-center rounded-2xl border border-stone-600 p-2 transition hover:bg-white">
-                    <FaTwitter className="text-sky-400 hover:text-black" />
-                  </div>
-                  <div className="flex h-[40px] w-[40px] items-center justify-center rounded-2xl border border-stone-600 p-2 transition duration-300 hover:bg-white">
-                    <FaLinkedinIn className="text-sky-400 hover:text-black" />
-                  </div>
-                  <div className="flex h-[40px] w-[40px] items-center justify-center rounded-2xl border border-stone-600 p-2 transition duration-300 hover:bg-white">
+                  </a>
+                  <a
+                    href="https://instagram.com/yourprofile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex h-[40px] w-[40px] items-center justify-center rounded-2xl border border-stone-600 p-2 transition duration-300 hover:bg-white"
+                  >
                     <FaInstagram className="text-sky-400 hover:text-black" />
-                  </div>
+                  </a>
+                  <a
+                    href="https://twitter.com/yourprofile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex h-[40px] w-[40px] items-center justify-center rounded-2xl border border-stone-600 p-2 transition duration-300 hover:bg-white"
+                  >
+                    <FaTwitter className="text-sky-400 hover:text-black" />
+                  </a>
                 </div>
               </div>
             </div>
