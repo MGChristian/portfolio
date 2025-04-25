@@ -4,29 +4,7 @@ import { MdArrowForward } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.png";
-
-const navValues = [
-  {
-    key: "nav1",
-    name: "HOME",
-    src: "/",
-  },
-  {
-    key: "nav2",
-    name: "ABOUT US",
-    src: "/about",
-  },
-  {
-    key: "nav3",
-    name: "TEAM",
-    src: "/team",
-  },
-  {
-    key: "nav4",
-    name: "PROJECTS",
-    src: "/projects",
-  },
-];
+import navValues from "../data/navbarData";
 
 export default function Navbar() {
   const [currentPage, setCurrentPage] = useState(
