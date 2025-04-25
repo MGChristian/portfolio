@@ -8,7 +8,6 @@ export default function Projects() {
     <>
       <Navbar />
       <Background />
-
       <section className="flex-column flex h-64 items-center justify-center">
         <h1 className="animate-slide-in unbounded text-4xl font-normal text-white text-shadow-black text-shadow-lg md:text-5xl lg:text-6xl">
           Check Our Workss
