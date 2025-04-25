@@ -4,7 +4,7 @@ import { LuSquareMenu } from "react-icons/lu";
 import { MdOutlineRocket } from "react-icons/md";
 import { TbCircleLetterG } from "react-icons/tb";
 import Client from "../assets/client1.png";
-import Group from "../assets/group.png";
+import Group from "../assets/teamportfolio (2).png";
 import Footer from "../components/Footer";
 import Form from "../components/Form";
 import Navbar from "../components/Navbar";
@@ -125,7 +125,7 @@ function HeroSection() {
         </Marquee>
       </div>
       <div className="z-2 min-h-64">
-        <img src={Group} className="h-full" />
+        <img src={Group} className="h-200 object-contain" />
       </div>
     </section>
   );
