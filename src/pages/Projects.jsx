@@ -13,11 +13,18 @@ export default function Projects() {
           Check Our Works
         </h1>
       </section>
+<<<<<<< Updated upstream
       <section className="mx-auto mb-48 flex w-full max-w-[1300px] flex-wrap justify-center gap-4 px-4 overflow-hidden">
+=======
+      <section className="mx-auto mb-48 flex w-full max-w-[1300px] flex-wrap justify-center gap-4">
+>>>>>>> Stashed changes
         {projectsData.map((project, index) => {
           return (
             <Link to={`/projects/${project.projectID}`}>
-              <div key={project.projectID} className="group w-96 rounded-2xl">
+              <div
+                key={project.projectID}
+                className="group w-96 max-w-full rounded-2xl p-4"
+              >
                 <div className="relative mb-4 h-80 overflow-hidden rounded-2xl">
                   <img
                     src={project.projectPicture}

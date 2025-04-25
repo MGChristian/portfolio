@@ -56,15 +56,15 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="unbounded absolute bottom-32 w-full overflow-hidden text-9xl font-semibold text-white/80">
+      <div className="unbounded absolute bottom-16 w-full overflow-hidden text-6xl font-semibold text-white/80 md:bottom-32 md:text-9xl">
         <Marquee className="overflow-hidden" speed={200}>
           <p className="mx-8">Best Team Developer</p>
           <p className="mx-8">Best Team Developer</p>
           <p className="mx-8">Best Team Developer</p>
         </Marquee>
       </div>
-      <div className="z-2 min-h-64">
-        <img src={Group} className="h-96 object-contain object-bottom" />
+      <div className="z-2 min-h-fit">
+        <img src={Group} className="object-contain object-bottom md:h-96" />
       </div>
     </section>
   );
