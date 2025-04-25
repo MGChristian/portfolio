@@ -15,7 +15,11 @@ export default function Projects() {
       </section>
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <section className="mx-auto mb-48 flex w-full max-w-[1300px] flex-wrap justify-center gap-4 px-4 overflow-hidden">
+=======
+      <section className="mx-auto mb-48 flex w-full max-w-[1300px] flex-wrap justify-center gap-4">
+>>>>>>> Stashed changes
 =======
       <section className="mx-auto mb-48 flex w-full max-w-[1300px] flex-wrap justify-center gap-4">
 >>>>>>> Stashed changes
