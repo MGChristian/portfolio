@@ -148,6 +148,74 @@ const projectsData = [
     ],
     projectScreenshots: "",
   },
+  {
+    projectID: "project-5",
+    projectName: "Online Entrance Exam Management System",
+    projectDescription:
+      "a web-based platform designed to automate and streamline the administration of entrance examinations.",
+    projectPicture: Team,
+    projectLanguages: [
+      {
+        languageIcon: <SiHtml5 size={15} />,
+        languageName: "HTML",
+      },
+      {
+        languageIcon: <SiCss3 size={15} />,
+        languageName: "CSS",
+      },
+      {
+        languageIcon: <SiJavascript size={15} />,
+        languageName: "JavaScript",
+      },
+      {
+        languageIcon: <SiBootstrap size={15} />,
+        languageName: "Bootstrap",
+      },
+      {
+        languageIcon: <SiPhp size={15} />,
+        languageName: "PHP",
+      },
+      {
+        languageIcon: <SiMysql size={15} />,
+        languageName: "MySQL",
+      },
+    ],
+    projectScreenshots: "",
+  },
+  {
+    projectID: "project-6",
+    projectName: "Online Entrance Exam Management System",
+    projectDescription:
+      "a web-based platform designed to automate and streamline the administration of entrance examinations.",
+    projectPicture: Team,
+    projectLanguages: [
+      {
+        languageIcon: <SiHtml5 size={15} />,
+        languageName: "HTML",
+      },
+      {
+        languageIcon: <SiCss3 size={15} />,
+        languageName: "CSS",
+      },
+      {
+        languageIcon: <SiJavascript size={15} />,
+        languageName: "JavaScript",
+      },
+      {
+        languageIcon: <SiBootstrap size={15} />,
+        languageName: "Bootstrap",
+      },
+      {
+        languageIcon: <SiPhp size={15} />,
+        languageName: "PHP",
+      },
+      {
+        languageIcon: <SiMysql size={15} />,
+        languageName: "MySQL",
+      },
+    ],
+    projectScreenshots: "",
+  },
 ];
 
 export default projectsData;
