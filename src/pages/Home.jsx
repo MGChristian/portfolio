@@ -3,8 +3,8 @@ import { IoMegaphoneOutline } from "react-icons/io5";
 import { LuSquareMenu } from "react-icons/lu";
 import { MdOutlineRocket } from "react-icons/md";
 import { TbCircleLetterG } from "react-icons/tb";
-import Client from "../assets/client1.png";
-import Group from "../assets/teamportfolio (2).png";
+import Client from "../assets/Home.jpg";
+import Group from "../assets/teamportfolio.png";
 import Footer from "../components/Footer";
 import Form from "../components/Form";
 import Navbar from "../components/Navbar";
@@ -110,18 +110,26 @@ function Technologies() {
           <div className="absolute z-5 flex flex-wrap pt-4 text-white">
             <div className="mx-auto flex items-center">
               <div className="animate-bubble-animation-reverse-slow flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20">
-                <p className="text-xl md:text-2xl lg:text-3xl text-center satoshireg text-sky-400">I.T. Builders</p>
+                <p className="satoshireg text-center text-xl text-sky-400 md:text-2xl lg:text-3xl">
+                  I.T. Builders
+                </p>
               </div>
               <div className="animate-bubble-animation-slow flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20">
-                <p className="text-xl md:text-2xl lg:text-3xl text-center satoshireg text-sky-400">Skill in Action</p>
+                <p className="satoshireg text-center text-xl text-sky-400 md:text-2xl lg:text-3xl">
+                  Skill in Action
+                </p>
               </div>
             </div>
             <div className="mx-auto flex items-center">
               <div className="animate-bubble-animation-reverse flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20">
-              <p className="text-xl md:text-2xl lg:text-3xl text-center satoshireg text-sky-400">Project Ready</p>
+                <p className="satoshireg text-center text-xl text-sky-400 md:text-2xl lg:text-3xl">
+                  Project Ready
+                </p>
               </div>
               <div className="animate-bubble-animation flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20">
-              <p className="text-xl md:text-2xl lg:text-3xl text-center satoshireg text-sky-400">Young Innovators</p>
+                <p className="satoshireg text-center text-xl text-sky-400 md:text-2xl lg:text-3xl">
+                  Young Innovators
+                </p>
               </div>
             </div>
           </div>
@@ -137,11 +145,12 @@ function Technologies() {
                 <MdOutlineRocket size={50} />
               </div>
               <div className="">
-                <h4 className="font-normal text-white md:text-2xl lg:text-2xl unbounded">
+                <h4 className="unbounded font-normal text-white md:text-2xl lg:text-2xl">
                   Driven by Purpose
                 </h4>
-                <p className="text-gray-400 satoshireg">
-                  Each line of code we write brings us closer to becoming industry-ready professionals.
+                <p className="satoshireg text-gray-400">
+                  Each line of code we write brings us closer to becoming
+                  industry-ready professionals.
                 </p>
               </div>
             </div>
@@ -150,11 +159,12 @@ function Technologies() {
                 <MdOutlineRocket size={50} />
               </div>
               <div>
-                <h4 className="font-normal text-white md:text-2xl lg:text-2xl unbounded">
+                <h4 className="unbounded font-normal text-white md:text-2xl lg:text-2xl">
                   Building the Future of IT
                 </h4>
-                <p className="text-gray-400 satoshireg">
-                  Through collaboration and innovation, we aim to shape solutions for tomorrow’s challenges.
+                <p className="satoshireg text-gray-400">
+                  Through collaboration and innovation, we aim to shape
+                  solutions for tomorrow’s challenges.
                 </p>
               </div>
             </div>
@@ -163,11 +173,12 @@ function Technologies() {
                 <MdOutlineRocket size={50} />
               </div>
               <div>
-                <h4 className="font-normal text-white md:text-2xl lg:text-2xl unbounded">
+                <h4 className="unbounded font-normal text-white md:text-2xl lg:text-2xl">
                   Passionate and Capable
                 </h4>
-                <p className="text-gray-400 satoshireg">
-                  We take pride in our ability to learn fast, work as a team, and create impact through technology.
+                <p className="satoshireg text-gray-400">
+                  We take pride in our ability to learn fast, work as a team,
+                  and create impact through technology.
                 </p>
               </div>
             </div>

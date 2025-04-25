@@ -9,7 +9,6 @@ import {
   SiPhp,
   SiTailwindcss,
 } from "react-icons/si";
-import Team from "../assets/team.png";
 
 // BARANGAY MANAGEMENT SYSTEM SCREENSHOTS
 import BMS1 from "../assets/BMS1.png";
@@ -205,7 +204,7 @@ const projectsData = [
     projectID: "project-4",
     projectName: "Wrod Scrmable",
     projectDescription:
-      "A simple and fun word puzzle game built using Java Swing GUI. The game features a clean interface, score tracking, and supports multiple levels of difficulty",
+      "A fun word puzzle game built using Java Swing GUI. The game features a clean interface, score tracking, and supports multiple levels of difficulty",
     projectPicture: WordGame1,
     projectLanguages: [
       {
@@ -256,7 +255,7 @@ const projectsData = [
     projectID: "project-5",
     projectName: "RoomCloud: File Management System",
     projectDescription:
-      "a web-based platform designed to automate and streamline the administration of entrance examinations.",
+      "It's a capstone file management system for students to manage their capstone projects, built purely with HTML and CSS.",
     projectPicture: FMS1,
     projectLanguages: [
       {

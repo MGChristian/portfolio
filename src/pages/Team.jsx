@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaGithub, FaPlus } from "react-icons/fa6";
 
-import TeamPicture from "../assets/team.png";
+import TeamPicture from "../assets/team.jpg";
 import Background from "../components/background";
 import Navbar from "../components/Navbar";
 import Values from "../components/Values";
@@ -18,7 +18,7 @@ export default function Team() {
           <div className="animate-slide-in-bottom relative flex h-full flex-col items-center gap-12 rounded-3xl shadow-2xl">
             <img
               src={TeamPicture}
-              className="block h-full w-full rounded-4xl bg-linear-to-b from-transparent to-neutral-900 object-cover object-top"
+              className="block h-full w-full rounded-4xl bg-linear-to-b from-transparent to-neutral-900 object-cover object-center"
             />
             <div className="absolute h-full w-full rounded-4xl bg-linear-to-b from-transparent to-black"></div>
             <h1 className="unbounded absolute bottom-6 text-center text-3xl font-normal md:text-5xl lg:bottom-8 lg:text-6xl">
@@ -111,7 +111,10 @@ function Members() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaGithub className="text-black hover:text-sky-800" size={30} />
+                    <FaGithub
+                      className="text-black hover:text-sky-800"
+                      size={30}
+                    />
                   </a>
                 </div>
                 <div
@@ -122,7 +125,10 @@ function Members() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaFacebookF className="text-black hover:text-sky-800" size={30} />
+                    <FaFacebookF
+                      className="text-black hover:text-sky-800"
+                      size={30}
+                    />
                   </a>
                 </div>
                 <div
@@ -133,7 +139,10 @@ function Members() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaInstagram className="text-black hover:text-sky-800" size={30} />
+                    <FaInstagram
+                      className="text-black hover:text-sky-800"
+                      size={30}
+                    />
                   </a>
                 </div>
               </div>

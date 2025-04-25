@@ -106,7 +106,7 @@ export default function Navbar() {
         {navValues.map((item, index) => {
           return (
             <div
-              className={`group relative flex h-full w-full items-center justify-center overflow-hidden rounded-full text-sky-400 transition-transform duration-700 ease-in-out hover:scale-90 ${currentPage == item.src ? "scale-105 bg-neutral-800/75" : "scale-100"}`}
+              className={`group relative flex h-full w-full items-center justify-center overflow-hidden rounded-full text-sky-400 transition-all duration-700 ease-in-out hover:bg-neutral-800/75 ${currentPage == item.src ? "bg-neutral-800/75" : ""}`}
             >
               <Link
                 key={index}
@@ -124,7 +124,7 @@ export default function Navbar() {
           );
         })}
         <Link
-          className={`unbounded my-4 w-full rounded-full border bg-orange-400 p-4 text-center text-black transition-colors duration-300 ease-in-out hover:bg-orange-400 hover:text-black`}
+          className={`unbounded my-4 w-full rounded-full border border-neutral-500 p-4 text-center text-white transition-colors duration-300 ease-in-out hover:bg-orange-400 hover:text-black ${currentPage == "/contact" ? "bg-orange-400" : ""}`}
           to="/contact"
           onClick={() => setNav(false)}
         >
