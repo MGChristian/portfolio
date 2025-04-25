@@ -9,71 +9,10 @@ import Footer from "../components/Footer";
 import Form from "../components/Form";
 import Navbar from "../components/Navbar";
 
-import { FaBullseye, FaEye, FaJava, FaReact } from "react-icons/fa";
-import {
-  SiArduino,
-  SiBootstrap,
-  SiCss3,
-  SiHtml5,
-  SiJavascript,
-  SiMysql,
-  SiPhp,
-  SiTailwindcss,
-} from "react-icons/si";
-import Background from "../components/background";
+import { FaBullseye, FaEye } from "react-icons/fa";
 
-const technologiesList = [
-  {
-    ID: "technology-1",
-    TechnologyName: "HTML",
-    TechnologyIcon: <SiHtml5 size={50} />,
-  },
-  {
-    ID: "technology-2",
-    TechnologyName: "CSS",
-    TechnologyIcon: <SiCss3 size={50} />,
-  },
-  {
-    ID: "technology-3",
-    TechnologyName: "JavaScript",
-    TechnologyIcon: <SiJavascript size={50} />,
-  },
-  {
-    ID: "technology-4",
-    TechnologyName: "MySQL",
-    TechnologyIcon: <SiMysql size={50} />,
-  },
-  {
-    ID: "technology-5",
-    TechnologyName: "PHP",
-    TechnologyIcon: <SiPhp size={50} />,
-  },
-  {
-    ID: "technology-6",
-    TechnologyName: "Java",
-    TechnologyIcon: <FaJava size={50} />,
-  },
-  {
-    ID: "technology-7",
-    TechnologyName: "Arduino",
-    TechnologyIcon: <SiArduino size={50} />,
-  },
-  {
-    ID: "technology-8",
-    TechnologyName: "TailwindCSS",
-    TechnologyIcon: <SiTailwindcss size={50} />,
-  },
-  {
-    ID: "technology-9",
-    TechnologyName: "Bootstrap",
-    TechnologyIcon: <SiBootstrap size={50} />,
-  },
-  {
-    ID: "technology-10",
-    TechnologyName: "React.js",
-    TechnologyIcon: <FaReact size={50} />,
-  },
-];
+import Background from "../components/background";
+import technologiesList from "../data/technologyData";
 
 export default function Home() {
   return (
@@ -269,7 +208,7 @@ function TeamIntroduction() {
         data-aos="fade-up"
         className="mx-auto w-full max-w-[1300px] px-3"
       >
-        <div className="flex flex-wrap w-full gap-y-1 md:gap-y-0">
+        <div className="flex w-full flex-wrap gap-y-1 md:gap-y-0">
           <div className="mb-2 w-full px-1 md:w-1/2">
             <div className="flex h-full flex-col gap-4 rounded-3xl border border-stone-700 bg-linear-to-b from-stone-600/20 to-stone-900/25 p-6 text-white shadow-2xl">
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-neutral-500 bg-neutral-700/50">
