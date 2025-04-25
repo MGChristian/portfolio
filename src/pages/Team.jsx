@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { FaFacebookSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
-import Developer from "../assets/develper.png";
+import Asuncion from "../assets/Asuncion.png";
+import Christian from "../assets/Christian.png";
+import Cuevas from "../assets/Cuevas.png";
 import TeamPicture from "../assets/team.png";
 import Background from "../components/background";
 import Navbar from "../components/Navbar";
@@ -15,6 +17,7 @@ const members = [
     memberRoleName: "Back End",
     memberSkill:
       "Specializes in server-side programming using Java and PHP, manages data with MySQL.",
+    memberPic: Christian,
   },
   {
     ID: "member-2",
@@ -23,6 +26,7 @@ const members = [
     memberRoleName: "Front End",
     memberSkill:
       "Focuses on building the user interface and ensuring responsive design.",
+    memberPic: Cuevas,
   },
   {
     ID: "member-3",
@@ -31,6 +35,7 @@ const members = [
     memberRoleName: "Project",
     memberSkill:
       "Oversees task distribution, progress tracking and manages timelines.",
+    memberPic: Asuncion,
   },
   {
     ID: "member-4",
@@ -135,8 +140,8 @@ function Members() {
                 {member.memberRole}
               </p>
               <img
-                src={Developer}
-                className={`z-2 mx-auto mt-16 h-100 w-[70%] transition-all duration-500 ease-in-out ${clickedMembers.indexOf(member.ID) === -1 ? "grayscale group-hover:translate-y-4" : ""}`}
+                src={member.memberPic}
+                className={`z-2 mx-auto mt-10 h-100 w-full object-cover transition-all duration-500 ease-in-out ${clickedMembers.indexOf(member.ID) === -1 ? "grayscale group-hover:translate-y-4" : ""}`}
               />
               <div className="absolute bottom-4 z-3 flex w-full justify-center gap-4">
                 <div
