@@ -64,7 +64,7 @@ function HeroSection() {
         </Marquee>
       </div>
       <div className="z-2 min-h-64">
-        <img src={Group} className="h-200 object-contain" />
+        <img src={Group} className="h-96 object-contain object-bottom" />
       </div>
     </section>
   );
