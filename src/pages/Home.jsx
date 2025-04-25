@@ -110,22 +110,18 @@ function Technologies() {
           <div className="absolute z-5 flex flex-wrap pt-4 text-white">
             <div className="mx-auto flex items-center">
               <div className="animate-bubble-animation-reverse-slow flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl">15+</h2>
-                <p>Years of Experience</p>
+                <p className="text-xl md:text-2xl lg:text-3xl text-center satoshireg text-sky-400">I.T. Builders</p>
               </div>
               <div className="animate-bubble-animation-slow flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl">15+</h2>
-                <p>Years of Experience</p>
+                <p className="text-xl md:text-2xl lg:text-3xl text-center satoshireg text-sky-400">Skill in Action</p>
               </div>
             </div>
             <div className="mx-auto flex items-center">
               <div className="animate-bubble-animation-reverse flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl">15+</h2>
-                <p>Years of Experience</p>
+              <p className="text-xl md:text-2xl lg:text-3xl text-center satoshireg text-sky-400">Project Ready</p>
               </div>
               <div className="animate-bubble-animation flex h-48 w-48 flex-col items-center justify-center rounded-full bg-neutral-400/20">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl">15+</h2>
-                <p>Years of Experience</p>
+              <p className="text-xl md:text-2xl lg:text-3xl text-center satoshireg text-sky-400">Young Innovators</p>
               </div>
             </div>
           </div>
@@ -140,13 +136,12 @@ function Technologies() {
               <div className="flex h-16 w-16 items-center justify-center rounded-2xl border-2 border-sky-400 bg-neutral-900 text-sky-400">
                 <MdOutlineRocket size={50} />
               </div>
-              <div>
-                <h4 className="font-bold text-white md:text-2xl lg:text-3xl">
-                  Proven Track Record
+              <div className="">
+                <h4 className="font-normal text-white md:text-2xl lg:text-2xl unbounded">
+                  Driven by Purpose
                 </h4>
-                <p className="text-gray-400">
-                  We have built a reputation as a trusted and reliable partner
-                  in achieving business success.
+                <p className="text-gray-400 satoshireg">
+                  Each line of code we write brings us closer to becoming industry-ready professionals.
                 </p>
               </div>
             </div>
@@ -155,12 +150,11 @@ function Technologies() {
                 <MdOutlineRocket size={50} />
               </div>
               <div>
-                <h4 className="font-bold text-white md:text-2xl lg:text-3xl">
-                  Proven Track Record
+                <h4 className="font-normal text-white md:text-2xl lg:text-2xl unbounded">
+                  Building the Future of IT
                 </h4>
-                <p className="text-gray-400">
-                  We have built a reputation as a trusted and reliable partner
-                  in achieving business success.
+                <p className="text-gray-400 satoshireg">
+                  Through collaboration and innovation, we aim to shape solutions for tomorrow’s challenges.
                 </p>
               </div>
             </div>
@@ -169,12 +163,11 @@ function Technologies() {
                 <MdOutlineRocket size={50} />
               </div>
               <div>
-                <h4 className="font-bold text-white md:text-2xl lg:text-3xl">
-                  Proven Track Record
+                <h4 className="font-normal text-white md:text-2xl lg:text-2xl unbounded">
+                  Passionate and Capable
                 </h4>
-                <p className="text-gray-400">
-                  We have built a reputation as a trusted and reliable partner
-                  in achieving business success.
+                <p className="text-gray-400 satoshireg">
+                  We take pride in our ability to learn fast, work as a team, and create impact through technology.
                 </p>
               </div>
             </div>

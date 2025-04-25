@@ -13,7 +13,7 @@ export default function Projects() {
           Check Our Works
         </h1>
       </section>
-      <section className="mx-auto mb-48 flex w-full max-w-[1300px] flex-wrap justify-center gap-4 px-4">
+      <section className="mx-auto mb-48 flex w-full max-w-[1300px] flex-wrap justify-center gap-4 px-4 overflow-hidden">
         {projectsData.map((project, index) => {
           return (
             <Link to={`/projects/${project.projectID}`}>

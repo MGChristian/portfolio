@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaGithub, FaPlus } from "react-icons/fa6";
 
 import TeamPicture from "../assets/team.png";
@@ -122,7 +122,7 @@ function Members() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaFacebookSquare className="text-black hover:text-sky-800" size={30} />
+                    <FaFacebookF className="text-black hover:text-sky-800" size={30} />
                   </a>
                 </div>
                 <div
@@ -133,7 +133,7 @@ function Members() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaInstagramSquare className="text-black hover:text-sky-800" size={30} />
+                    <FaInstagram className="text-black hover:text-sky-800" size={30} />
                   </a>
                 </div>
               </div>
