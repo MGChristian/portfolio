@@ -134,6 +134,10 @@ const projectsData = [
         languageIcon: <SiCss3 size={15} />,
         languageName: "CSS",
       },
+      {
+        languageIcon: <SiJavascript size={15} />,
+        languageName: "JavaScript",
+      },
     ],
     projectScreenshots: [
       {
