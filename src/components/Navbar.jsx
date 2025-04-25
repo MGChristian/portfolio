@@ -117,7 +117,7 @@ export default function Navbar() {
       >
         {navValues.map((item, index) => {
           return (
-            <div className={`group relative flex h-full min-w-[440px] text-sky-400 items-center justify-center overflow-hidden rounded-full transition-transform duration-700 ease-in-out hover:scale-90 ${currentPage == item.src ? "scale-105 bg-neutral-800/75" : "scale-100"}`}>
+            <div className={`group relative flex h-full w-[440px] text-sky-400 items-center justify-center overflow-hidden rounded-full transition-transform duration-700 ease-in-out hover:scale-90 ${currentPage == item.src ? "scale-105 bg-neutral-800/75" : "scale-100"}`}>
               <Link
                 key={index}
                 className={`text-md unbounded w-full rounded-full p-4 text-center text-white`}
