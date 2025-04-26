@@ -31,3 +31,10 @@ portfolio/
 ├── package.json
 ├── README.md
 └── vite.config.js       # Vite config
+
+Members:
+Christian Gutierrez
+Jericho Vincent Cuevas
+Luis Angelo Asuncion
+Nica Ilang-Ilang
+Jeremy Reyes
