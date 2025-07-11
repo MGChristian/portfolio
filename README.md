@@ -34,6 +34,8 @@ portfolio/
 └── vite.config.js       # Vite config
 ```
 
+---
+
 
 Members:
 Christian Gutierrez
