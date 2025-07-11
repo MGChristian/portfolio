@@ -15,6 +15,7 @@ Welcome to our Team Portfolio! This project showcases our team members, their ro
 
 ---
 
+```
 portfolio/
 │
 ├── public/               # Static files and assets
@@ -31,6 +32,8 @@ portfolio/
 ├── package.json
 ├── README.md
 └── vite.config.js       # Vite config
+```
+
 
 Members:
 Christian Gutierrez
